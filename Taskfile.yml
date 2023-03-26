@@ -1,0 +1,22 @@
+version: "3"
+
+vars:
+  HUGO_BINDING: 0.0.0.0
+  HUGO_BASEURL: http://localhost
+  HUGO_PORT: 1313
+  HUGO_APPENDPORT: true
+  HUGO_LIVERELOADPORT: -1
+
+tasks:
+  update:
+    cmds:
+      # todo, check update validation
+      - go install github.com/jackyzha0/hugo-obsidian@latest
+      - git remote show upstream || (echo "remote 'upstream' not present, setting 'upstream'" && git remote add upstream https://github.com/jackyzha0/quartz.git)
+      - git fetch upstream
+      - git log --oneline --decorate --graph ..upstream/hugo
+      - git checkout -p upstream/hugo -- layouts .github Makefile assets/js assets/styles/base.scss assets/styles/darkmode.scss config.toml data
+  serve:
+    cmds:
+      - hugo-obsidian -input=content -output=assets/indices -index -root=.
+      - hugo server --enableGitInfo --minify --bind={{.HUGO_BINDING}} --baseURL={{.HUGO_BASEURL}} --port={{.HUGO_PORT}} --appendPort={{.HUGO_APPENDPORT}} --liveReloadPort={{.HUGO_LIVERELOADPORT}}

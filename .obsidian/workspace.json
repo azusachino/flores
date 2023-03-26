@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "af37be0201f1edfe",
+    "type": "split",
+    "children": [
+      {
+        "id": "f42bbff676a179aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "642fe8d46103a591",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/reading/columns/Java并发编程实战.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d13ffe622542d71f",
+    "type": "split",
+    "children": [
+      {
+        "id": "646f4a0ee370acc9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90558f83c6f06630",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "168d9a27b64269a7",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "28655d894ad7ef7a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 253.5
+  },
+  "right": {
+    "id": "b9c5f39a1a3c938e",
+    "type": "split",
+    "children": [
+      {
+        "id": "5bf2c7b984ba46fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d92cabb1e3e7c138",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "490cef20e39b1da5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/reading/columns/Java并发编程实战.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "1a7c6287819d15e5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/reading/columns/Java并发编程实战.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4baf2ca9fef1d207",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bb32eb03e7623d6b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/reading/columns/Java并发编程实战.md"
+              }
+            }
+          },
+          {
+            "id": "bbb389054f077486",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 276.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false,
+      "workspaces:Manage workspace layouts": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "642fe8d46103a591",
+  "lastOpenFiles": [
+    "content/_index.md",
+    "content/reading/columns/Go语言第一课.md",
+    "content/pages/Concurrent Programming.md",
+    "content/pages/Concensus Theory.md",
+    "content/pages/Cognitive Load Theory.md",
+    "content/pages/Bruce Lee.md",
+    "content/pages/Brain.md",
+    "content/pages/Black Hole.md",
+    "content/pages/Aperture.md",
+    "content/pages/Abstract Queued Synchronizer.md",
+    "content/reading/weread/计算机/计算机是怎样跑起来的.md",
+    "content/topics/Weread.md",
+    "content/topics/LeetCode.md",
+    "content/topics/Hypothesis.md",
+    "content/topics/Health.md",
+    "content/topics/CS.md",
+    "content/topics/Columns.md",
+    "content/topics/Articles.md",
+    "content/writting/体温过高的危害.md",
+    "content/writting/为什么说所有的二元论都可以放置在光谱之上.md",
+    "content/writting/How To Write.md",
+    "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
+    "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
+    "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
+    "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
+    "resources/_gen/assets/scss/styles/_callouts.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
+    "resources/_gen/assets/scss/styles/_callouts.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
+    "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
+    "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
+    "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
+    "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
+    "assets/concurrent-programming.png",
+    "reading/books/System Design Interview.md",
+    "assets/system-design-architecture.png",
+    "topics/Articles.md",
+    "collections/instructions/Instruction 2023.md",
+    "journals/2023-03-10.md",
+    "journals/2023-03-09.md",
+    "assets/load-balancer-api-gateway.png",
+    "assets/integrated-circuit.png"
+  ]
+}

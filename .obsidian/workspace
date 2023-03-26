@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "af37be0201f1edfe",
+    "type": "split",
+    "children": [
+      {
+        "id": "42a4fb2a331bceac",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "collections/quotation/quotation 2022.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": true
+          }
+        },
+        "group": "d82b9c6f7add50d8"
+      },
+      {
+        "id": "02c63457724cc683",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "collections/quotation/quotation 2022.md",
+            "mode": "preview",
+            "backlinks": true,
+            "source": true
+          }
+        },
+        "group": "d82b9c6f7add50d8"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d13ffe622542d71f",
+    "type": "split",
+    "children": [
+      {
+        "id": "646f4a0ee370acc9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90558f83c6f06630",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "muse letter",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "168d9a27b64269a7",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "28655d894ad7ef7a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 301
+  },
+  "right": {
+    "id": "b9c5f39a1a3c938e",
+    "type": "split",
+    "children": [
+      {
+        "id": "5bf2c7b984ba46fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d92cabb1e3e7c138",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "490cef20e39b1da5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "collections/quotation/quotation 2022.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1a7c6287819d15e5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "collections/quotation/quotation 2022.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4baf2ca9fef1d207",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bb32eb03e7623d6b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "collections/quotation/quotation 2022.md"
+              }
+            }
+          },
+          {
+            "id": "bbb389054f077486",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 276.5
+  },
+  "active": "42a4fb2a331bceac",
+  "lastOpenFiles": [
+    "journals/2022-10-13.md",
+    "journals/2022-10-12.md",
+    "journals/2022-10-11.md",
+    "collections/lyrics/コスモポップファンクラブ.md",
+    "pages/Dry Eye.md",
+    "pages/肠胃.md",
+    "weeks/week-2022-42.md",
+    "journals/2022-10-10.md",
+    "collections/quotation/quotation 2022.md",
+    "reading/books/Atomic Habit.md"
+  ]
+}
