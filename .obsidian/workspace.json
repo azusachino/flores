@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/collections/instructions/Instruction 2022.md",
+                "file": "content/_index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/collections/instructions/Instruction 2022.md",
+                "file": "content/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/collections/instructions/Instruction 2022.md",
+                "file": "content/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/collections/instructions/Instruction 2022.md"
+                "file": "content/_index.md"
               }
             }
           },
@@ -161,6 +161,10 @@
   },
   "active": "642fe8d46103a591",
   "lastOpenFiles": [
+    "content/reading/articles/The Ultimate Guide to Writing Online.md",
+    "content/writting/How To Write.md",
+    "content/writting/为什么说所有的二元论都可以放置在光谱之上.md",
+    "content/collections/instructions/Instruction 2022.md",
     ",markdownlint.json",
     "content/collections/instructions/Instruction 2023.md",
     "content/_index.md",
@@ -183,8 +187,6 @@
     "content/topics/Columns.md",
     "content/topics/Articles.md",
     "content/writting/体温过高的危害.md",
-    "content/writting/为什么说所有的二元论都可以放置在光谱之上.md",
-    "content/writting/How To Write.md",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
     "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
@@ -194,11 +196,9 @@
     "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
     "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
     "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
-    "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
     "assets/concurrent-programming.png",
     "reading/books/System Design Interview.md",
     "assets/system-design-architecture.png",
-    "topics/Articles.md",
     "assets/load-balancer-api-gateway.png",
     "assets/integrated-circuit.png"
   ]

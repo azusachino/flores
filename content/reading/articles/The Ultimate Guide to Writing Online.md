@@ -18,8 +18,6 @@ tags: [Article, Writting]
 3. Write in public
 4. Imitate, then innovate
 
-- [ ] TODO
-
 ## References
 
 - [The Ultimate Guide to Writing Online](https://perell.com/essay/the-ultimate-guide-to-writing-online/)
