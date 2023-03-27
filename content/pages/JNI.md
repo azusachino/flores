@@ -1,7 +1,7 @@
 ---
 title: JNI技术
-created: 2022-08-21 08:00:00
-modified: 2022-12-05 14:05:27
+created: 2022-08-21 16:00:00
+modified: 2023-03-27 10:27:04
 aliases: [Java Native Interface]
 tags: [CS, Java]
 ---
@@ -27,17 +27,16 @@ static JNINativeMethod jni_methods_[] = {
 /**
 * @brief Register several native methods for one class.
 */
-static int registerNativeMethods(JNIEnv *env, const char *className,
-						 JNINativeMethod *gMethods, int numMethods)
+static int registerNativeMethods(JNIEnv *env, const char *className, JNINativeMethod *gMethods, int numMethods)
 {
   jclass clazz = env->FindClass(className);
   if (clazz == NULL)
   {
-	  return JNI_FALSE;
+    return JNI_FALSE;
   }
   if (env->RegisterNatives(clazz, gMethods, numMethods) < 0)
   {
-	  return JNI_FALSE;
+    return JNI_FALSE;
   }
   return JNI_TRUE;
 }
@@ -61,7 +60,7 @@ if (r == JNI_FALSE) {
 // register native methods
 jint ret = registerNativeMethods(jni_env, jni_clazz_impl_, jni_methods_, sizeof(jni_methods_) / sizeof(jni_methods_[0]));
 if (JNI_TRUE == ret)
-	std::cout << "native methods registered" << std::endl;
+  std::cout << "native methods registered" << std::endl;
 
 // must return valid JNI Version
 return JNI_VERSION_1_8;
@@ -86,10 +85,10 @@ extern JavaVM *jvm_global_;
 int32_t attach_t(JNIEnv **jni_env) {
 if (jvm_global_->getEnv(reinterpret<void**>(jni_env), JNI_VERSION_1_8) < 0) {
   if (jvm_global_->AttachCurrentThread(reinterpret<void**>(jni_env), nullptr) < 0) {
-	*jni_env = nullptr;
-	return -1;
+    *jni_env = nullptr;
+    return -1;
   } else {
-	return 0;
+    return 0;
   }
 }
 return -1;
@@ -133,24 +132,24 @@ jni_env->DeleteLocalRef(j_log);
 ### 如何加载动态库
 
 - Two approaches to set `java.library.path`
-	- VM Args - `java -Djava.library.path=/usr/local/app -jar app.jar`
-	- Set System Property - `System.setProperty("java.library.path", "/usr/local/app");`
+  - VM Args - `java -Djava.library.path=/usr/local/app -jar app.jar`
+  - Set System Property - `System.setProperty("java.library.path", "/usr/local/app");`
 - Differences
-	- 如果想在程序中加载一些库文件，使用第一种方式指定 `java.library.path` 属性时可以正常载入，而使用第二中方式就不行。
-	- `java.library.path` 只有在JVM启动的时候读取一次，因此在代码中更改 `java.library.path` 是不起任何作用的。
-	- 可以在代码中使用 `System.load("/usr/local/app")` 来加载绝对地址指定的本地库。
+  - 如果想在程序中加载一些库文件，使用第一种方式指定 `java.library.path` 属性时可以正常载入，而使用第二中方式就不行。
+  - `java.library.path` 只有在 JVM 启动的时候读取一次，因此在代码中更改 `java.library.path` 是不起任何作用的。
+  - 可以在代码中使用 `System.load("/usr/local/app")` 来加载绝对地址指定的本地库。
 - `LD_LIBRARY_PATH`
-	- JVM启动时，会使用系统变量 `LD_LIBRARY_PATH` 的值来初始化`java.library.path` 属性。
-- `-Djava.library.path` 和  `LD_LIBRARY_PATH` 的区别
-	- 使用  `java -Djava.library.path=/usr/local/app` 的方式设置的话，会**覆盖**默认值。
-	- 使用 `export  LD_LIBRARY_PATH= /usr/local/app` 的方式设置的话，会**追加**其值到默认值中。
+  - JVM 启动时，会使用系统变量 `LD_LIBRARY_PATH` 的值来初始化`java.library.path` 属性。
+- `-Djava.library.path` 和   `LD_LIBRARY_PATH` 的区别
+  - 使用   `java -Djava.library.path=/usr/local/app`  的方式设置的话，会**覆盖**默认值。
+  - 使用 `export  LD_LIBRARY_PATH= /usr/local/app` 的方式设置的话，会**追加**其值到默认值中。
 
 ### General Tips
 
 - Minimize marshalling of resources across the JNI layer
 - Avoid asynchronous communication between code written in a managed programming language and code written in C++ when possible
 - Minimize the number of threads that need to touch or be touched by JNI
-- Keep your interface code in a low number of easily identified C++ and Java source locations to facilitate future refactors - 考虑找自动生成JNI代码框架
+- Keep your interface code in a low number of easily identified C++ and Java source locations to facilitate future refactors - 考虑找自动生成 JNI 代码框架
 
 ### Threads
 
@@ -164,4 +163,4 @@ jni_env->DeleteLocalRef(j_log);
 - [MYRICA - JNI 简单案例](https://github.com/azusachino/myrica)
 - [How to set java library path](https://blog.csdn.net/codepython/article/details/42718003)
 - [Google JNI Tips](https://developer.android.com/training/articles/perf-jni)
-- [JNI为什么要调用AttachCurrentThread？](https://keeplooking.top/2020/05/19/Android/AttachCurrentThread)
+- [JNI 为什么要调用 AttachCurrentThread？](https://keeplooking.top/2020/05/19/Android/AttachCurrentThread)

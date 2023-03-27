@@ -1,12 +1,12 @@
 ---
 title: A Framework for Knowledge
-created: 2022-08-31 23:25:04
-modified: 2023-03-26 11:19:48
+created: 2022-09-01 07:25:04
+modified: 2023-03-27 10:36:15
 tags: [Article, Growth, MoreToThat]
---- 
+---
 
-> [!important] **Attentional Capital** 
-A measurement used to determine the depth of how we arrive at a piece of information
+> [!important] **Attentional Capital**
+> A measurement used to determine the depth of how we arrive at a piece of information
 
 - Having a high AC means that you have obtained your information through focused and objective research, tested your findings with other individuals, and would be open to changing your position if presented with sufficient evidence to do so.
 - Having a low AC means that you reactively believe whatever comes across your news feed, refuse to dialogue with others about your beliefs, and hold onto your beliefs in a dogmatic and tribal manner.

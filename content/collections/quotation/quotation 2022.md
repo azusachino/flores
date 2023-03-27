@@ -1,42 +1,42 @@
 ---
 title: Quotation 2022
-created: 2022-08-26 08:00:00
-modified: 2022-12-26 10:51:31
+created: 2022-08-26 16:00:00
+modified: 2023-03-27 10:21:49
 tags: [Collection, Quotation]
 ---
 
->[!quote] 孩子 - 纪伯伦
-你的孩子，并不是你的孩子
-他们是由生命本身的渴望而诞生的孩子
-他们借助你来到这世界，却非因你而来
-他们在你身旁，却并不属于你
-你可以给予他们的是你的爱，而不是你的想法 因为他们有自己的思想
-你可以庇护的是他们的身体，而不是他们的灵魂
-因为他们的灵魂属于明天，属于你做梦也无法到达的明天
-你可以拼尽全力，变得像他们一样， 却不要让他们变得和你一样
-因为生命不会后退，也不在过去停留
-你是弓，儿女是从你那里射出的箭
-弓箭手望着未来之路上的箭靶， 他用尽力气将弓拉开，使他的箭射得又快又远
-怀着快乐的心情，在弓箭手的手中弯曲吧， 因为他爱一路飞翔的箭，也爱无比稳定的弓。
-
-> [!quote] 
-The more personal you are willing to be and the more intimate you are willing to be about the details of your own life, the more universal you are.
-
-> [!quote] 
-We have this fleeting chance to participate in an illusion called 'I love my girlfriend' and 'I love my dog'. How is that not better?
+> [!quote] 孩子 - 纪伯伦
+> 你的孩子，并不是你的孩子
+> 他们是由生命本身的渴望而诞生的孩子
+> 他们借助你来到这世界，却非因你而来
+> 他们在你身旁，却并不属于你
+> 你可以给予他们的是你的爱，而不是你的想法 因为他们有自己的思想
+> 你可以庇护的是他们的身体，而不是他们的灵魂
+> 因为他们的灵魂属于明天，属于你做梦也无法到达的明天
+> 你可以拼尽全力，变得像他们一样， 却不要让他们变得和你一样
+> 因为生命不会后退，也不在过去停留
+> 你是弓，儿女是从你那里射出的箭
+> 弓箭手望着未来之路上的箭靶， 他用尽力气将弓拉开，使他的箭射得又快又远
+> 怀着快乐的心情，在弓箭手的手中弯曲吧， 因为他爱一路飞翔的箭，也爱无比稳定的弓。
 
 > [!quote]
-Knowing the truth, which is that nothing matters, can actually save you in those moments. Once you get through that terrifying threshold of accepting that, then every place is the center of the universe, and every moment is the most important moment, and every thing is the meaning of life.
- 
-> [!quote] 
+> The more personal you are willing to be and the more intimate you are willing to be about the details of your own life, the more universal you are.
+
+> [!quote]
+> We have this fleeting chance to participate in an illusion called 'I love my girlfriend' and 'I love my dog'. How is that not better?
+
+> [!quote]
+> Knowing the truth, which is that nothing matters, can actually save you in those moments. Once you get through that terrifying threshold of accepting that, then every place is the center of the universe, and every moment is the most important moment, and every thing is the meaning of life.
+
+> [!quote]
 > If you go deeply into solitude, it will grow clearer to you that it's not something you choose to do or not to do. Humans are fundamentally solitary. That is our nature.  
 > \- Rainer Maria Rilke
 
-> [!quote] 
+> [!quote]
 > The best way to predict the future is to invent it  
 > — Alan Kay (1989)
 
->[!quote]
+> [!quote]
 > I am no longer accepting the things I cannot change. I am changing the things I cannot accept.  
 > — Angela Yvonne Davis
 
@@ -53,47 +53,47 @@ Knowing the truth, which is that nothing matters, can actually save you in those
 > ——罗翔
 
 > [!quote]
->Roads in the mountains teach you a very important lesson in life —— what seems like an END is very often just a BEND.
+> Roads in the mountains teach you a very important lesson in life —— what seems like an END is very often just a BEND.
 >
 > 山间公路教会你人生中非常重要一课——看似到了尽头，实际上只是一个弯道。  
 > ——Anonym
 
 > [!quote]
 > 醒悟的人都有一个特征，就是心怀怜悯，能够透过人间苦难，去思考什么是伪善、罪恶、公正与道德。
-> 
+>
 > 冷漠和麻木的人，是不屑于做这些事的。
-> 
+>
 > 说到底，悲观是一种远见，鼠目寸光的人不可能悲观。
-> 
+>
 > \- 木心 「文学回忆录」
 
 > [!quote]
 > 旧人不知我近况，新人不知我过往。
-> 
+>
 > 近况不该旧人知，过往不与新人讲。
-> 
+>
 > 纵你阅人何其多，再无一人恰似我。
-> 
+>
 > \- 张爱玲
 
 > [!quote]
 > 你对人情世故的每一分通透， 对爱来爱去的每一份豁达，都是用失望换来的。
-> 
+>
 > \- 傅首尔
 
 > [!quote]
 > 上帝的理想，
-并非真主的理想。
-你们的理想，
-既不是我们的理想，
-也不是他们的理想。
-但凡是人的理想，
-没有不带主观偏好的。
-所以几乎总是好人给世界带来最大的破坏。
+> 并非真主的理想。
+> 你们的理想，
+> 既不是我们的理想，
+> 也不是他们的理想。
+> 但凡是人的理想，
+> 没有不带主观偏好的。
+> 所以几乎总是好人给世界带来最大的破坏。
 >
-**人类历史上，**
-**许许多多严重的罪行、暴行、灾祸，**
-**都是那些本来一心想做好事的人带来的。**  
+> **人类历史上，**
+> **许许多多严重的罪行、暴行、灾祸，**
+> **都是那些本来一心想做好事的人带来的。**  
 > \- 鲍迈斯特
 
 > [!quote]
@@ -105,25 +105,25 @@ Knowing the truth, which is that nothing matters, can actually save you in those
 > [!quote]
 > 人生最大的遗憾，是一个人无法同时拥有青春和对青春的感受。
 
-> [!quote] 
+> [!quote]
 > The ultimate form of preparation is not planning for a specific scenario, but a mindset that can handle uncertainty.
-> 
+>
 > \- James Clear
 
-> [!quote] 
+> [!quote]
 > 不经他人苦，莫劝他人善；若经他人苦，未必有他善。
 
-> [!important] 
+> [!important]
 > "A fool takes in all the lumber of every sort that he comes across, so that the knowledge which might be useful to him gets crowded out, or at best is jumbled up with a lot of other things, so that he has a difficulty in laying his hands upon it. Now the skillful workman is very careful indeed as to what he takes into his brain-attic."
-> 
+>
 > \- Sherlock Holmes
 
 > [!quote]
 > A great challenge of life: Knowing enough to think you are right, but not knowing enough to know you are wrong.
-> 
+>
 > \- Neil deGrasse Tyson
 
 > [!important]
 > There is no certain way of telling in advance if the daydreams of a life dedicated to the pursuit of truth will carry a novice through the frustration of seeing experiments fail and of making the dismaying discovery that some of one's favorite ideas are groundless.
-> 
+>
 > \- Peter Medawar

@@ -1,11 +1,11 @@
 ---
 title: The 85% Rule for Learning
-created: 2022-08-31 14:01:51
-modified: 2022-12-05 14:05:27
+created: 2022-08-31 22:01:51
+modified: 2023-03-27 10:38:19
 tags: [Article, Growth]
 ---
 
-> [!quote] 
+> [!quote]
 > The road to success is paved with mistakes well handled.  
 > \- Stanley Marcus
 

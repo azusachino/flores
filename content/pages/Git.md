@@ -1,12 +1,12 @@
 ---
 title: Git
-created: 2022-08-22 16:00:00
-modified: 2023-02-28 16:31:11
+created: 2022-08-23 00:00:00
+modified: 2023-03-27 10:25:25
 tags: [CS, Tool]
 ---
 
-> [!important] 
-当今世界最流行的版本管理工具。
+> [!important]
+> 当今世界最流行的版本管理工具。
 
 ## Instructions
 

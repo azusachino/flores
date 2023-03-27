@@ -1,7 +1,7 @@
 ---
 title: 12 Questions That Will Change Your Life
-created: 2022-08-25 16:00:00
-modified: 2022-12-05 14:05:27
+created: 2022-08-26 00:00:00
+modified: 2023-03-27 10:37:03
 tags: [Article, Philosophy]
 ---
 
@@ -13,15 +13,15 @@ tags: [Article, Philosophy]
 
 首先要清楚光谱的两端各是什么，然后才能加强警惕，防止自己走向极端。
 
->[!quote]
->The test of a first-rate intelligence is the ability to hold two opposing ideas in mind at the same time and still retain the ability to function.
->\- F. Scott Fitzgerald
+> [!quote]
+> The test of a first-rate intelligence is the ability to hold two opposing ideas in mind at the same time and still retain the ability to function.
+> \- F. Scott Fitzgerald
 
-> [!hint] 
-Never Jump to conclusion, Sitting with the question.**
+> [!hint]
+> Never Jump to conclusion, Sitting with the question.\*\*
 
->[!quote]
- Anything with form has meaning, and therefore could invite controversy. The world we are bringing into being will exalt the talentless, the spineless, the shapeless, the meaningless.
+> [!quote]
+> Anything with form has meaning, and therefore could invite controversy. The world we are bringing into being will exalt the talentless, the spineless, the shapeless, the meaningless.
 
 别傻乎乎的以为在网上公开发言就能让对方改过自新了，做好自己就足够了。
 

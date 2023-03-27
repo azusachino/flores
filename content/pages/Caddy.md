@@ -1,7 +1,7 @@
 ---
 title: Caddy
-created: 2022-08-21 00:00:00
-modified: 2022-12-05 14:05:28
+created: 2022-08-21 08:00:00
+modified: 2023-03-27 10:23:51
 tags: [Network, Golang]
 ---
 
@@ -10,9 +10,9 @@ Caddy is a powerful, extensible platform to serve your sites, services, and apps
 ## Regularly Used Commands
 
 - `caddy run`
-	- start caddy server (may load the `Caddyfile` in cwd)
-	- `caddy run --config /path/to/Caddyfile`
-	- `caddy run --watch` watch config file changes
+  - start caddy server (may load the `Caddyfile` in cwd)
+  - `caddy run --config /path/to/Caddyfile`
+  - `caddy run --watch` watch config file changes
 - `caddy start` - start caddy server and have it run in the background
 - `caddy stop` - stop the caddy process
 - `caddy reload` - for a graceful config change

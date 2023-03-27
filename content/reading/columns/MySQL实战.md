@@ -1,7 +1,7 @@
 ---
 title: MySQL实战
-created: 2023-02-04 17:34:23
-modified: 2023-03-26 11:19:48
+created: 2023-02-05 01:34:23
+modified: 2023-03-27 10:35:29
 tags: [Column, MySQL]
 author: 林晓斌
 read: 30
@@ -17,7 +17,7 @@ status: 暂停
 
 ### 日志系统
 
-- Redo Log - WAL 先写入redo-log (memory)，避免每次更新写入磁盘造成I/O压力过大
+- Redo Log - WAL 先写入 redo-log (memory)，避免每次更新写入磁盘造成 I/O 压力过大
 
 **redo-log | bin-log**
 
@@ -37,17 +37,17 @@ status: 暂停
 
 事务执行过程中，先把日志写到 binlog cache，事务提交的时候，再把 binlog cache 写到 binlog 文件中。
 
-1.  sync_binlog=0 的时候，表示每次提交事务都只 write，不 fsync；
-2.  sync_binlog=1 的时候，表示每次提交事务都会执行 fsync；
-3.  sync_binlog=N(N>1) 的时候，表示每次提交事务都 write，但累积 N 个事务后才 fsync。
+1. sync_binlog=0 的时候，表示每次提交事务都只 write，不 fsync；
+2. sync_binlog=1 的时候，表示每次提交事务都会执行 fsync；
+3. sync_binlog=N(N>1) 的时候，表示每次提交事务都 write，但累积 N 个事务后才 fsync。
 
 #### redolog
 
 为控制 redo log 的写入策略，InnoDB 提供了 `innodb_flush_log_at_trx_commit` 参数，它有三种可能取值：
 
-1.  设置为 0 的时候，表示每次事务提交时都只是把 redo log 留在 redo log buffer 中 ;
-2.  设置为 1 的时候，表示每次事务提交时都将 redo log 直接持久化到磁盘；
-3.  设置为 2 的时候，表示每次事务提交时都只是把 redo log 写到 page cache。
+1. 设置为 0 的时候，表示每次事务提交时都只是把 redo log 留在 redo log buffer 中 ;
+2. 设置为 1 的时候，表示每次事务提交时都将 redo log 直接持久化到磁盘；
+3. 设置为 2 的时候，表示每次事务提交时都只是把 redo log 写到 page cache。
 
 ![[../../images/mysql-log-write-sequences.png]]
 
@@ -71,13 +71,13 @@ select a,b,c from t where a = 'abc' sort by b limit 10;
 # 3. alter table t add index abc_index(a, b, c) => 覆盖索引，无需回表
 ```
 
-> [!question] MySQL为什么有时候会选错索引？
+> [!question] MySQL 为什么有时候会选错索引？
 > 对于每个索引，依据区分度，会计算出【基数】，这是判断索引效率的基准
-> 
-> 在MySQL中，基数是通过采样计算的，即有可能产生问题描述的情况
-> 
+>
+> 在 MySQL 中，基数是通过采样计算的，即有可能产生问题描述的情况
+>
 > 1. 采用 force index 强行选择索引
-> 2. 修改SQL语句，引导 MySQL 使用期望的索引
+> 2. 修改 SQL 语句，引导 MySQL 使用期望的索引
 > 3. 新建更加合适的索引
 
 #### 字符串索引
@@ -91,24 +91,24 @@ select a,b,c from t where a = 'abc' sort by b limit 10;
 
 - 全局锁：对整个数据库实例加锁 **全局锁的典型使用场景是，做全库逻辑备份。**
 - 表级锁
-    - `lock tables tbl_sample read/write`
-    - MDL (metadata lock) 可能后阻塞后面的读操作，在 `alter table` 时最好加上超时时间
+  - `lock tables tbl_sample read/write`
+  - MDL (metadata lock) 可能后阻塞后面的读操作，在 `alter table` 时最好加上超时时间
 - 行级锁
-    - **在 InnoDB 事务中，行锁是在需要的时候才加上的，但并不是不需要了就立刻释放，而是要等到事务结束时才释放。这个就是两阶段锁协议。**
+  - **在 InnoDB 事务中，行锁是在需要的时候才加上的，但并不是不需要了就立刻释放，而是要等到事务结束时才释放。这个就是两阶段锁协议。**
 
 **行锁死锁**
 
--  一种策略是，直接进入等待，直到超时。这个超时时间可以通过参数 `innodb_lock_wait_timeout` 来设置。
--  另一种策略是，发起死锁检测，发现死锁后，主动回滚死锁链条中的某一个事务，让其他事务得以继续执行。将参数 `innodb_deadlock_detect` 设置为 on，表示开启这个逻辑。
+- 一种策略是，直接进入等待，直到超时。这个超时时间可以通过参数 `innodb_lock_wait_timeout` 来设置。
+- 另一种策略是，发起死锁检测，发现死锁后，主动回滚死锁链条中的某一个事务，让其他事务得以继续执行。将参数 `innodb_deadlock_detect` 设置为 on，表示开启这个逻辑。
 
 ### 事务隔离
 
 - 一致性读 【row tx_id】
-    - `select k from t where id = 1` 仅能读取可见最新版本数据
-- 当前读：**更新数据都是先读后写的，而这个读 (最新row tx_id版本)，只能读当前的值，称为“当前读”（current read）。**
-    - `update t set k = k + 1 where id = 1`
-    - `select k from t where id = 1 lock for share mode`
-    - `select k from t where id = 1 for update`
+  - `select k from t where id = 1` 仅能读取可见最新版本数据
+- 当前读：**更新数据都是先读后写的，而这个读 (最新 row tx_id 版本)，只能读当前的值，称为“当前读”（current read）。**
+  - `update t set k = k + 1 where id = 1`
+  - `select k from t where id = 1 lock for share mode`
+  - `select k from t where id = 1 for update`
 
 **可见性**
 
@@ -120,27 +120,27 @@ select a,b,c from t where a = 'abc' sort by b limit 10;
 
 可重复读的核心就是一致性读（consistent read）；而事务更新数据的时候，只能用当前读。如果当前的记录的行锁被其他事务占用的话，就需要进入锁等待。
 
--   对于可重复读，查询只承认在事务启动前就已经提交完成的数据；
--   对于读提交，查询只承认在语句启动前就已经提交完成的数据；
+- 对于可重复读，查询只承认在事务启动前就已经提交完成的数据；
+- 对于读提交，查询只承认在语句启动前就已经提交完成的数据；
 
 ### 脏页 flush
 
-`innodb_io_capacity` **当前系统的io处理能力，直接影响mysql的脏页flush效率**
+`innodb_io_capacity` **当前系统的 io 处理能力，直接影响 mysql 的脏页 flush 效率**
 
-1. redo log 写满：MySQL会停止所有的更新操作，把 checkpoint 往前推进， redo log 才可以继续写入数据
-2. 系统内存不足：当需要新的内存页、而内存不够用的时候，需要淘汰一些数据页，空出内存；如果淘汰的是脏页，需要先进行flush
+1. redo log 写满：MySQL 会停止所有的更新操作，把 checkpoint 往前推进， redo log 才可以继续写入数据
+2. 系统内存不足：当需要新的内存页、而内存不够用的时候，需要淘汰一些数据页，空出内存；如果淘汰的是脏页，需要先进行 flush
 3. 系统空闲时
 4. 系统正常关闭
 
 ### 表空间
 
-`innodb_file_per_table` 控制表数据存放在共享表空间，还是单独的文件。**ON表示每个InnoDB表数据存储在 `*.idb` 文件中** 通过 `drop table` 命令可以直接删除该表文件。
+`innodb_file_per_table` 控制表数据存放在共享表空间，还是单独的文件。**ON 表示每个 InnoDB 表数据存储在 `*.idb` 文件中** 通过 `drop table` 命令可以直接删除该表文件。
 
 > [!question] 为什么表数据删掉一半，表文件大小不变？
-> InnoDB是按页存储的，如果删除一整个数据页的记录，整个数据也就可以被复用了；问题出在，数据页的复用与记录的复用是不同的。
-> 
+> InnoDB 是按页存储的，如果删除一整个数据页的记录，整个数据也就可以被复用了；问题出在，数据页的复用与记录的复用是不同的。
+>
 > **delete 命令其实只是把记录的位置，或者数据页标记为了“可复用”，但磁盘文件的大小是不会变的。**
-> 
+>
 > 重建表：`alter table t engine=innodb,ALGORITHM=inplace`
 
 ### `count (*)`
@@ -157,10 +157,11 @@ select a,b,c from t where a = 'abc' sort by b limit 10;
 4. 隐式字符编码【utf8，utf8bm4】转换会导致全表扫描。
 
 > [!question] 如果你的 MySQL 现在出现了性能瓶颈，而且瓶颈在 IO 上，可以通过哪些方法来提升性能呢？
-> 1.  设置 binlog_group_commit_sync_delay 和 binlog_group_commit_sync_no_delay_count 参数，减少 binlog 的写盘次数。这个方法是基于“额外的故意等待”来实现的，因此可能会增加语句的响应时间，但没有丢失数据的风险。
+>
+> 1. 设置 binlog_group_commit_sync_delay 和 binlog_group_commit_sync_no_delay_count 参数，减少 binlog 的写盘次数。这个方法是基于“额外的故意等待”来实现的，因此可能会增加语句的响应时间，但没有丢失数据的风险。
 > 2. 将 sync_binlog 设置为大于 1 的值（比较常见是 100~1000）。这样做的风险是，主机掉电时会丢 binlog 日志。
 > 3. 将 innodb_flush_log_at_trx_commit 设置为 2。这样做的风险是，主机掉电的时候会丢数据。
 
 ## References
 
-- [MySQL实战45讲 - 极客时间]()
+- [MySQL 实战 45 讲 - 极客时间](http://localhost)

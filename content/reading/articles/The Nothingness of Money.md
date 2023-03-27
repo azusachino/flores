@@ -1,7 +1,7 @@
 ---
 title: The Nothingness of Money
-created: 2022-08-31 11:10:57
-modified: 2022-12-05 14:05:27
+created: 2022-08-31 19:10:57
+modified: 2023-03-27 10:38:14
 tags: [Article, Life, Philosophy, MoreToThat]
 ---
 

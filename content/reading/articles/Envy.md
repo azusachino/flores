@@ -1,7 +1,7 @@
 ---
 title: Envy
-created: 2022-08-31 14:55:53
-modified: 2023-03-26 11:19:48
+created: 2022-08-31 22:55:53
+modified: 2023-03-27 10:36:51
 tags: [Article, Life, MoreToThat]
 ---
 
@@ -20,12 +20,12 @@ Envy is one of the great struggles plaguing humanity today and it's only getting
 ## How to Get Rid of Envy?
 
 - The interplay of three things
-    - A desired good
-    - A rival
-    - A landscape of potential rivals
-- 1. Question the desired good
-  2. Reframe the (imagined) dynamic you have with your rival
-  3. Take time to block all incoming noise from potential rivals. Focus on your own life
+  - A desired good
+  - A rival
+  - A landscape of potential rivals
+- Question the desired good
+  1. Reframe the (imagined) dynamic you have with your rival
+  2. Take time to block all incoming noise from potential rivals. Focus on your own life
 
 ## References
 

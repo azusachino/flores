@@ -1,11 +1,11 @@
 ---
 title: Rust-lang
-created: 2022-08-27 08:00:00
-modified: 2023-03-26 11:19:47
+created: 2022-08-27 16:00:00
+modified: 2023-03-27 10:29:12
 tags: [CS, ProgrammingLanguage]
 ---
 
-A language empowering everyone  to build reliable and efficient software.
+A language empowering everyone to build reliable and efficient software.
 
 ## Strengths
 
@@ -32,15 +32,15 @@ Rust 有非常丰富的控制流程，包括模式匹配（pattern match）。
 
 ### `println!`
 
-- `{}` 代表Display，比如println！（＂{}＂，2）
-- `{:?}` 代表Debug，比如println！（＂{：？}＂，2）
-- `{:o}` 代表八进制，比如println！（＂{：o}＂，2）
-- `{:x}` 代表十六进制小写，比如println！（＂{：x}＂，2）
-- `{:X}` 代表十六进制大写，比如println！（＂{：X}＂，2）
-- `{:p}` 代表指针，比如println！（＂{：p}＂，2）
-- `{:b}` 代表二进制，比如println！（＂{：b}＂，2）
-- `{:e}` 代表指数小写，比如println！（＂{：e}＂，2）
-- `{:E}` 代表指数大写，比如println！（＂{：E}＂，2）。
+- `{}` 代表 Display，比如 println！（＂{}＂，2）
+- `{:?}` 代表 Debug，比如 println！（＂{：？}＂，2）
+- `{:o}` 代表八进制，比如 println！（＂{：o}＂，2）
+- `{:x}` 代表十六进制小写，比如 println！（＂{：x}＂，2）
+- `{:X}` 代表十六进制大写，比如 println！（＂{：X}＂，2）
+- `{:p}` 代表指针，比如 println！（＂{：p}＂，2）
+- `{:b}` 代表二进制，比如 println！（＂{：b}＂，2）
+- `{:e}` 代表指数小写，比如 println！（＂{：e}＂，2）
+- `{:E}` 代表指数大写，比如 println！（＂{：E}＂，2）。
 
 ## 内存
 
@@ -116,7 +116,7 @@ Objective-C 和 Swift 采用了 自动引用计数 (Automatic Reference Counting
 
 ![[../images/rust-vec-trait-sample.png]]
 
-### 运行方式（并发运行、同步、异步和Promise/async/await）
+### 运行方式（并发运行、同步、异步和 Promise/async/await）
 
 ![[../images/rust-concurrent.png]]
 
@@ -166,7 +166,7 @@ mod tests {
         is_copy::<u64>();
         is_copy::<f32>();
         is_copy::<usize>();
-        
+       
         // function (pointer) is Copy
         is_copy::<fn()>();
 
@@ -266,9 +266,9 @@ mod tests {
 - `Sized` trait 用于标记有具体大小的类型。在使用泛型参数时，编译器会自动为泛型参数加上 `Sized` 约束。
 - 如果一个类型 T 实现了 Send trait，意味着 T 可以安全地从一个线程移动到另一个线程，也就是说所有权可以在线程间移动。
 - 如果一个类型 T 实现了 Sync trait，则意味着 &T 可以安全地在多个线程中共享。一个类型 T 满足 Sync trait，当且仅当 &T 满足 Send trait。
-    - 裸指针 `*const T / *mut T`。它们是不安全的，所以既不是 Send 也不是 Sync。
-    - `UnsafeCell<T>` 不支持 Sync。也就是说，任何使用了 Cell 或者 RefCell 的数据结构不支持 Sync。
-    - 引用计数 Rc 不支持 Send 也不支持 Sync。所以 Rc 无法跨线程。
+  - 裸指针 `*const T / *mut T`。它们是不安全的，所以既不是 Send 也不是 Sync。
+  - `UnsafeCell<T>` 不支持 Sync。也就是说，任何使用了 Cell 或者 RefCell 的数据结构不支持 Sync。
+  - 引用计数 Rc 不支持 Send 也不支持 Sync。所以 Rc 无法跨线程。
 
 ![[../images/rust-operation-traits.png]]
 Trait 概览

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/reading/columns/Java并发编程实战.md",
+                "file": "content/collections/instructions/Instruction 2022.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -82,20 +82,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d92cabb1e3e7c138",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "490cef20e39b1da5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/reading/columns/Java并发编程实战.md",
+                "file": "content/collections/instructions/Instruction 2022.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/reading/columns/Java并发编程实战.md",
+                "file": "content/collections/instructions/Instruction 2022.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/reading/columns/Java并发编程实战.md"
+                "file": "content/collections/instructions/Instruction 2022.md"
               }
             }
           },
@@ -164,14 +156,15 @@
       "command-palette:Open command palette": false,
       "random-note:Open random note": false,
       "workspaces:Manage workspace layouts": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false
     }
   },
   "active": "642fe8d46103a591",
   "lastOpenFiles": [
+    ",markdownlint.json",
+    "content/collections/instructions/Instruction 2023.md",
     "content/_index.md",
+    "content/reading/columns/Java并发编程实战.md",
     "content/reading/columns/Go语言第一课.md",
     "content/pages/Concurrent Programming.md",
     "content/pages/Concensus Theory.md",
@@ -206,9 +199,6 @@
     "reading/books/System Design Interview.md",
     "assets/system-design-architecture.png",
     "topics/Articles.md",
-    "collections/instructions/Instruction 2023.md",
-    "journals/2023-03-10.md",
-    "journals/2023-03-09.md",
     "assets/load-balancer-api-gateway.png",
     "assets/integrated-circuit.png"
   ]

@@ -1,7 +1,7 @@
 ---
 title: CPP
-created: 2022-08-28 19:19:03
-modified: 2023-02-10 21:33:34
+created: 2022-08-29 03:19:03
+modified: 2023-03-27 10:24:19
 aliases: [C++]
 tags: [CS, ProgrammingLanguage]
 ---
@@ -36,4 +36,4 @@ The Program Language C++
 - [cplusplus](https://cplusplus.com/)
 - [man7](https://man7.org/index.html)
 - [C++智能指针](https://zhuanlan.zhihu.com/p/54078587)
-- [C++ Crash Course]()
+- C++ Crash Course

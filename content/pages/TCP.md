@@ -1,7 +1,7 @@
 ---
 title: TCP
-created: 2022-08-30 13:23:51
-modified: 2023-03-26 11:19:47
+created: 2022-08-30 21:23:51
+modified: 2023-03-27 10:29:32
 aliases: [Transmission Control Protocol]
 tags: [CS, Network, Protocol]
 ---
@@ -18,9 +18,9 @@ TCP is connection-based, so it establishes a connection between the receiver and
 - ACK Num: a number used to confirm the receipt of packets
 - TCP Header Length: the length of the TCP header in 32-bit words
 - Flags (SYN, ACK, FIN): various 1-bit flags that indicate the packet's purpose
-    - SYN (synchronize sequence numbers)
-    - ACK (acknowledge receipt)
-    - FIN (finish transmitting data)
+  - SYN (synchronize sequence numbers)
+  - ACK (acknowledge receipt)
+  - FIN (finish transmitting data)
 - Window size: the maximum amount of data that the receiving device is willing to accept in a single packet
 - Checksum: a value used to verify the integrity of the packet
 - Payload

@@ -1,7 +1,7 @@
 ---
 title: TLPI
-created: 2022-12-13 04:10:34
-modified: 2023-01-03 11:27:09
+created: 2022-12-13 12:10:34
+modified: 2023-03-27 10:29:34
 aliases: [The Linux Programming Interface]
 tags: [CS, Linux]
 ---
@@ -22,13 +22,13 @@ UNIX(AT&T) -> BSD(Berkeley), System V(AT&T)
 
 ## Tasks performed by the kernel
 
-- Process scheduling 
+- Process scheduling
 - Memory management (Virtual Memory Management)
-    - Processes are isolated from one other and from the kernel (user space, kernel space **the linux memory model**), one process can't read or modify the memory of another process or the kernel (memory safety)
+  - Processes are isolated from one other and from the kernel (user space, kernel space **the linux memory model**), one process can't read or modify the memory of another process or the kernel (memory safety)
 - Provision of a file system (the mighty overlay2)
 - Creation and termination of processes
-    - Load a new program into memory
-    - Provide the program with the resources
+  - Load a new program into memory
+  - Provide the program with the resources
 - Access to devices (mice, monitors, keyboards, disk and tape drives and so on)
 - Networking
 - Provision of a system call API

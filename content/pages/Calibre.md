@@ -1,7 +1,7 @@
 ---
 title: Calibre
-created: 2023-02-21 00:00:00
-modified: 2023-02-21 14:05:28
+created: 2023-02-21 08:00:00
+modified: 2023-03-27 10:23:57
 tags: [Tool, Reading]
 ---
 
@@ -35,5 +35,3 @@ docker run -d \
 - [How To Organize Your Ebook Collection with Calibre](https://www.howtogeek.com/73979/how-to-organize-your-ebook-collection-with-calibre)
 
 ## Resources
-
-- [calibre server docker]()

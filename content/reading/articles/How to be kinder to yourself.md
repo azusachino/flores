@@ -1,13 +1,13 @@
 ---
 title: How to be kinder to yourself
-created: 2022-08-31 14:14:06
-modified: 2022-12-05 14:05:27
+created: 2022-08-31 22:14:06
+modified: 2023-03-27 10:37:06
 tags: [Article, Life]
 ---
 
-> [!quote] 
-Self-compassion techniques are not self-indulgent - they will tame your inner critic while helping you change for the better.   
->\- Brooke Schwartz
+> [!quote]
+> Self-compassion techniques are not self-indulgent - they will tame your inner critic while helping you change for the better.  
+> \- Brooke Schwartz
 
 ## Self Compassion
 
@@ -30,8 +30,8 @@ Self-esteem is outcomes-oriented, whereas self-compassion is process-oriented.
 - 甚至在亲密关系中，总是被拒绝，批评，或者过度保护
 - 经常会遭受误解，认为会使人变得自恋、放纵、懒惰
 
-> [!quote] 
->Name it to tame it.   
+> [!quote]
+> Name it to tame it.  
 > \- Daniel Siegel
 
 只有找到你愤怒的源泉，才能逐渐驯服这头猛兽。

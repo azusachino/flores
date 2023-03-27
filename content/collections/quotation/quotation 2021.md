@@ -1,7 +1,7 @@
 ---
 title: Quotation 2021
-created: 2022-08-24 16:00:00
-modified: 2022-12-05 14:05:33
+created: 2022-08-25 00:00:00
+modified: 2023-03-27 10:21:46
 tags: [Collection, Quotation]
 ---
 
@@ -16,7 +16,7 @@ tags: [Collection, Quotation]
 9. 你需要的不是"水平方向的努力"，而是"垂直方向的努力"。
 10. People live suspended between the anxiety of being deluged in communication and the agony of receiving none.
 
-  ---
+---
 
 - Whoever fights monsters should see to it that in the process he does not become a monster. And if you gaze long enough into an abyss, the abyss will gaze back into you.
 - 青春、朱夏、白秋、玄冬
@@ -28,8 +28,8 @@ tags: [Collection, Quotation]
 - 这个世界不存在知识不够的情况，真的还没有到知识被少数精英的攥在手里面不给大家的情况，这个世界上的知识就像阳光和空气一样，根本不需要你付费，你就可以获得的。问题是，大多数人都失去了获取知识的能力，你就算把知识放在他们面前，他们也不会去学习，他们需要你喂，甚至需要你帮他们嚼碎了，帮他们消化过了，他们才能吃得到，消化得了。这才是最大的问题。不好意思，我又说实话了，难听但是对你有用。
 - 我的灵魂，如果它不燃烧，就是一团痛苦不堪的火。 \- 加缪
 
-> Great minds discuss ideas;  
+> Great minds discuss ideas;
 
-> Average minds discuss events;  
+> Average minds discuss events;
 
 > Small minds discuss people.

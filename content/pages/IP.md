@@ -1,7 +1,7 @@
 ---
 title: Internet Protocol
-created: 2022-12-18 23:40:00
-modified: 2023-03-26 11:19:47
+created: 2022-12-19 07:40:00
+modified: 2023-03-27 10:26:02
 tags: [CS, Network]
 ---
 
@@ -10,5 +10,3 @@ tags: [CS, Network]
 ![[../images/ip-header-structure.png]]
 
 ## References
-
-- []()

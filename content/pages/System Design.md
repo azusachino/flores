@@ -1,7 +1,7 @@
 ---
 title: System Design
-created: 2022-09-01 08:00:00
-modified: 2023-03-26 11:19:47
+created: 2022-09-01 16:00:00
+modified: 2023-03-27 10:29:29
 aliases: [系统设计]
 tags: [CS]
 ---
@@ -13,8 +13,8 @@ Learn how to design systems at scale and prepare for system design interviews.
 - Load balancer
 - Gateway (rate-limiting, authentication)
 - Database
-    - SQL vs NoSQL, sharding strategy
-    - if SQL, indices
+  - SQL vs NoSQL, sharding strategy
+  - if SQL, indices
 - Cache (optionally clustered/sharded)
 - Message queue, with workers
 - CDN
@@ -23,25 +23,25 @@ Learn how to design systems at scale and prepare for system design interviews.
 ## Checklist
 
 - Clarify requirements
-    - Write QPS, average and peak (peak is 2x average)
-    - Read QPS (approximate 10x write QPS)
-    - Total storage required
-    - Latency requirement
-    - Consistency vs Availability
+  - Write QPS, average and peak (peak is 2x average)
+  - Read QPS (approximate 10x write QPS)
+  - Total storage required
+  - Latency requirement
+  - Consistency vs Availability
 - High level diagram that matches requirements
 - Deep Dive
-    - APIs
-    - Database schema
+  - APIs
+  - Database schema
 - Wrap up
-    - Error cases
-    - Potential bottlenecks
+  - Error cases
+  - Potential bottlenecks
 - Extra credit
-    - Cost (development vs ongoing)
-    - Logging, metrics, alerts
-    - Automation - CI, CD
-    - i18n
-    - CDN
-    - RPC
+  - Cost (development vs ongoing)
+  - Logging, metrics, alerts
+  - Automation - CI, CD
+  - i18n
+  - CDN
+  - RPC
 
 ## Designs
 
@@ -91,7 +91,7 @@ Another One:
 
 ## References
 
--  [System Design - github](https://github.com/karanpratapsingh/system-design)
+- [System Design - github](https://github.com/karanpratapsingh/system-design)
 - [System Design Interview](https://til.nindalf.com/books/system-design-interview/)
 - [System Design Primer - github](https://github.com/donnemartin/system-design-primer)
 - [EP18: Build a chat application](https://blog.bytebytego.com/p/ep18-build-a-chat-application-also)

@@ -1,7 +1,7 @@
 ---
 title: Go语言第一课
-created: 2023-01-05 17:34:23
-modified: 2023-01-05 21:38:34
+created: 2023-01-06 01:34:23
+modified: 2023-03-27 10:34:22
 tags: [Column, Tech, Go]
 author: Tony Bai
 read: 9
@@ -25,19 +25,19 @@ Runtime 负责实现 Go 的垃圾收集、并发、内存堆栈管理等功能�
 ### 标准布局
 
 ```sh
-single-exe-layout  
-├── go.mod  
+single-exe-layout
+├── go.mod
 ├── internal/
-├── main.go 
-├── pkg1/  
-├── pkg2/  
+├── main.go
+├── pkg1/
+├── pkg2/
 └── vendor/
 ```
 
 ### 初始化次序
 
-- 依赖包按“深度优先”的次序进行初始化; 
-- 每个包内按以“常量 -> 变量 -> init 函数”的顺序进行初始化; 
+- 依赖包按“深度优先”的次序进行初始化;
+- 每个包内按以“常量 -> 变量 -> init 函数”的顺序进行初始化;
 - 包内的多个 init 函数按出现次序进行自动调用。
 
 ## 常用命令
@@ -51,4 +51,4 @@ go get github.com/sirupsen/logrus@1.5.0
 
 ## References
 
-- [Go语言第一课 - 极客时间]()
+- [Go 语言第一课 - 极客时间](http://localhost)

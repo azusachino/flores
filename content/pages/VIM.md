@@ -1,7 +1,7 @@
 ---
 title: VIM
-created: 2022-12-08 23:29:14
-modified: 2022-12-09 14:47:08
+created: 2022-12-09 07:29:14
+modified: 2023-03-27 10:29:44
 tags: [CS, Tool]
 ---
 
@@ -85,7 +85,7 @@ map <leader>6 :b 6<CR>
 map <leader>7 :b 7<CR>
 map <leader>8 :b 8<CR>
 map <leader>9 :b 9<CR>
- 
+
 " vim-scripts 中的插件 " yum install ctags
 Plugin 'taglist.vim'
 "ctags 配置:F3快捷键显示程序中的各种tags，包括变量和函数等。
@@ -94,35 +94,35 @@ let Tlist_Use_Right_Window=1
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_WinWidt=25
- 
+
 Plugin 'The-NERD-tree'
 "NERDTree 配置:F2快捷键显示当前目录树
 map <F2> :NERDTreeToggle<CR>
-let NERDTreeWinSize=25 
- 
+let NERDTreeWinSize=25
+
 Plugin 'indentLine.vim'
 Plugin 'delimitMate.vim'
- 
+
 " 非 github 仓库的插件"
 " Plugin 'git://git.wincent.com/command-t.git'
 " 本地仓库的插件 "
- 
+
 call vundle#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""键盘命令
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
- 
+
 nmap <leader>w :w!<cr>
 nmap <leader>f :find<cr>
- 
+
 " 映射全选+复制 ctrl+a
 map <C-A> ggVGY
 map! <C-A> <Esc>ggVGY
 map <F12> gg=G
 " 选中状态下 Ctrl+c 复制
 vmap <C-c> "+y
- 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""实用设置
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -130,13 +130,13 @@ vmap <C-c> "+y
 set autoread
 " quickfix模式
 autocmd FileType c,cpp map <buffer> <leader><space> :w<cr>:make<cr>
-"代码补全 
-set completeopt=preview,menu 
-"允许插件  
+"代码补全
+set completeopt=preview,menu
+"允许插件
 filetype plugin on
-"共享剪贴板  
-set clipboard=unnamed 
-"从不备份  
+"共享剪贴板
+set clipboard=unnamed
+"从不备份
 set nobackup
 "make 运行
 :set makeprg=g++\ -Wall\ \ %
@@ -150,8 +150,8 @@ set guioptions-=m           " 隐藏菜单栏
 
 " 设置在状态行显示的信息
 set foldcolumn=0
-set foldmethod=indent 
-set foldlevel=3 
+set foldmethod=indent
+set foldlevel=3
 set foldenable              " 开始折叠
 " 不要使用vi的键盘模式，而是vim自己的
 set nocompatible
@@ -249,13 +249,13 @@ set smartindent
 :inoremap " ""<ESC>i
 :inoremap ' ''<ESC>i
 function! ClosePair(char)
-	if getline('.')[col('.') - 1] == a:char
-		return "\<Right>"
-	else
-		return a:char
-	endif
+    if getline('.')[col('.') - 1] == a:char
+        return "\<Right>"
+    else
+        return a:char
+    endif
 endfunction
-filetype plugin indent on 
+filetype plugin indent on
 "打开文件类型检测, 加了这句才可以用智能补全
 set completeopt=longest,menu
 ```

@@ -1,41 +1,39 @@
 ---
 title: Quotation 2020
-created: 2022-08-24 16:00:00
-modified: 2022-12-05 14:05:33
+created: 2022-08-25 00:00:00
+modified: 2023-03-27 10:08:58
 tags: [Collection, Quotation]
 ---
 
-> 推开窗  
+> 推开窗
 
-> 咀嚼阳光的味道  
+> 咀嚼阳光的味道
 
-> 还有醉人的花香  
+> 还有醉人的花香
 
 > 梦再次起航
 
 >
 
-> 矢志不移，向远方  
+> 矢志不移，向远方
 
-> 谁给了我梦的翅膀  
+> 谁给了我梦的翅膀
 
-> 苍穹里尽情翱翔  
+> 苍穹里尽情翱翔
 
-> 那些温暖与感动  
+> 那些温暖与感动
 
 > 时光里悉心珍藏
 
 >
 
-> 种下憧憬与渴盼  
+> 种下憧憬与渴盼
 
-> 把忧伤狠狠遗忘  
+> 把忧伤狠狠遗忘
 
-> 携清风、明月  
+> 携清风、明月
 
 > 选择爱，便没有迷茫
-
-  
 
 君は初恋を知る途中 僕はそんな君に夢中
 
@@ -55,8 +53,6 @@ Your weakness aren't destined to be permanent in your life. They are meant to be
 
 > 你的软弱之处并不是注定伴随你的终身。他们只是你需要继续努力的地方，直到他们成为你的强项。
 
-  
-
 You don't have to be positive all the time. It's perfectly okay to feel sad, angry, annoyed, frustrated, scared, or anxious. Having feelings doesn't make you a 'negative person'. It makes you human.
 
 > 你并不需要时刻保持乐观。感到悲伤、愤怒、烦躁、挫败、恐惧和焦虑都是非常正常的。拥有上述感觉并不意味着你是一个悲观多人。他只表明你是一个正常的人。
@@ -64,7 +60,7 @@ You don't have to be positive all the time. It's perfectly okay to feel sad, ang
 I knew I matured when I realized not every situation deserves a reaction. Sometimes you just gotta leave people to do the dumb things they want to do.
 
 > 当我意识到不是每遇到一个事情都需要回应时，我知道我成熟了。有时候，你就是需要让别人去做那些他们想做的蠢事。
-  
+
 I hate the fact that some people get judged for being real while some are getting loved for being fake.
 
 > 我痛恨现实总是有些人因为实事求是而被议论，而有些人因为弄虚作假而被爱戴。

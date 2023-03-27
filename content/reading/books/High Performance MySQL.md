@@ -1,7 +1,7 @@
 ---
 title: High Performance MySQL
-created: 2023-01-07 17:34:23
-modified: 2023-03-26 11:19:48
+created: 2023-01-08 01:34:23
+modified: 2023-03-27 10:36:03
 aliases: [高性能MySQL]
 started: 2023-02-13
 finished: 2023-03-31
@@ -39,13 +39,13 @@ tags: [Book, CS, DB, MySQL]
 
 - Logical Architecture
 - Concurrency Control
-    - Read/Write Lock
-    - Lock Granularity (Table/Row Lock)
+  - Read/Write Lock
+  - Lock Granularity (Table/Row Lock)
 - Transaction
-    - Isolation Level
-    - ACID
-    - WAL
-    - Redo/Bin/Undo Log
+  - Isolation Level
+  - ACID
+  - WAL
+  - Redo/Bin/Undo Log
 - Multiversion Control
 - Replication
 - Datafile structure
@@ -54,7 +54,7 @@ A sequence diagram of handling multiple versions of a row across tractions:
 
 ![[../../images/mysql-transaction-sequence.png]]
 
-When a different session reads a cluster key index record, InnoDB compares the record’s transaction ID versus the read view of that session. If the record in its current state should not be visible (the transaction that altered it has not yet committed), the undo log record is followed and applied until the session reaches a transaction ID that is eligible to be visible. 
+When a different session reads a cluster key index record, InnoDB compares the record’s transaction ID versus the read view of that session. If the record in its current state should not be visible (the transaction that altered it has not yet committed), the undo log record is followed and applied until the session reaches a transaction ID that is eligible to be visible.
 
 **Datefiles Structure**
 

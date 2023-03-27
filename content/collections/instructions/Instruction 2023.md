@@ -1,7 +1,7 @@
 ---
 title: Instruction 2023
-created: 2022-08-27 16:00:00
-modified: 2023-03-09 11:01:32
+created: 2022-08-28 00:00:00
+modified: 2023-03-27 09:57:46
 tags: [Collection, Instruction]
 ---
 
@@ -32,7 +32,7 @@ mvn -f pom.xml dependency:tree
 
 ## SwitchyOmega
 
-using auto proxy mode, set to https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+using auto proxy mode, set to `https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt`
 
 ## Grafana
 

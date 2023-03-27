@@ -1,7 +1,7 @@
 ---
 title: Redis
-created: 2022-09-01 14:04:19
-modified: 2022-12-05 14:05:27
+created: 2022-09-01 22:04:19
+modified: 2023-03-27 10:29:10
 tags: [CS, MiddleWare]
 ---
 
@@ -22,6 +22,5 @@ Redis 是一个开源、基于内存、使用 C 语言编写的 key-value 数据
 ## References
 
 - [Redis 多线程网络模型全面揭秘](https://mp.weixin.qq.com/s/pm2NsPzTO4lJQfGUC4-sJQ)
-- [妈妈再也不担心我面试被Redis问得脸都绿了](https://mp.weixin.qq.com/s/vXBFscXqDcXS_VaIERplMQ)
+- [妈妈再也不担心我面试被 Redis 问得脸都绿了](https://mp.weixin.qq.com/s/vXBFscXqDcXS_VaIERplMQ)
 - [带你走进 Redis](https://mp.weixin.qq.com/s/4bAPVdUr_XbIw9xFCtWhfw)
-

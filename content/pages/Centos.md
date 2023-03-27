@@ -1,16 +1,16 @@
 ---
 title: Centos
-created: 2022-08-26 08:00:00
-modified: 2022-12-09 14:34:23
+created: 2022-08-26 16:00:00
+modified: 2023-03-27 10:24:09
 tags: [Linux, OS]
 ---
 
 > [!info] CentOS
-CentOS is a Linux distribution that provides a free and open-source community-supported computing platform, functionally compatible with its upstream source, Red Hat Enterprise Linux.
+> CentOS is a Linux distribution that provides a free and open-source community-supported computing platform, functionally compatible with its upstream source, Red Hat Enterprise Linux.
 
-目前国内常用的版本是Centos7，将在2024年停止维护。
+目前国内常用的版本是 Centos7，将在 2024 年停止维护。
 
-## 查看Centos版本
+## 查看 Centos 版本
 
 ```shell
 # 查询版本信息
@@ -25,7 +25,7 @@ cat /proc/cpuinfo | grep "cpu cores" | uniq #查看cpu核数
 cat /proc/cpuinfo | grep 'model name' |uniq #查看cpu型号
 ```
 
-## Centos(7|8) (x86_64) 配置源 [标准Centos]
+## Centos(7|8) (x86_64) 配置源 [标准 Centos]
 
 ```shell
 # 对于 CentOS 7
@@ -56,9 +56,9 @@ sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
 sudo yum makecache
 ```
 
-## 已不维护的Centos [centos-vault]
+## 已不维护的 Centos [centos-vault]
 
-如 Centos8 ARM架构
+如 Centos8 ARM 架构
 
 ```shell
 # CentOS 8 之前
@@ -80,8 +80,7 @@ sudo yum makecache
 
 ### 一键获取阿里云地址
 
-`wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-vault-8.5.2111.repo
-`
+`wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-vault-8.5.2111.repo`
 
 ## Install Local Rpm
 

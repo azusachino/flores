@@ -1,7 +1,7 @@
 ---
 title: Kubernetes
-created: 2022-08-30 00:00:00
-modified: 2023-03-26 11:19:47
+created: 2022-08-30 08:00:00
+modified: 2023-03-27 10:28:09
 aliases: [k8s]
 tags: [CS, Microservices]
 ---
@@ -20,7 +20,7 @@ Kubernetes is a software system for automating the deployment and management of 
 
 ## 特性能力
 
-- 自我修复：一旦某一个容器崩溃，能够在1秒左右启动新的容器 `Deployment`
+- 自我修复：一旦某一个容器崩溃，能够在 1 秒左右启动新的容器 `Deployment`
 - 弹性伸缩：可用根据配置，自动对集群中正在运行的容器数量进行调整 `Horizontal Pod Autoscaler`
 - 服务发现：服务可以通过自动发现的形式找到它所依赖的服务 `Kube-Proxy`
 - 负载均衡：`Service`
@@ -29,11 +29,11 @@ Kubernetes is a software system for automating the deployment and management of 
 
 ## 核心组件
 
-- API Server：资源操作的唯一入口，接受用户输入的命令，提供认证、授权、API注册和发现等机制
-- Kube-Scheduler：集群资源调度，按照预定的调度策略将Pod调度到合适的Node节点上
+- API Server：资源操作的唯一入口，接受用户输入的命令，提供认证、授权、API 注册和发现等机制
+- Kube-Scheduler：集群资源调度，按照预定的调度策略将 Pod 调度到合适的 Node 节点上
 - (Cloud) Controller Manager：服务维护集群的状态，如程序部署安排、故障检测、自动扩展、滚动更新等
 - [[Etcd]]：存储集群中各种资源对象的信息
-- Node**：集群的数据平面，为容器提供运行环境
+- Node\*\*：集群的数据平面，为容器提供运行环境
 - Kubelet：管理容器的生命周期，通过 docker-shim/containerd 组件来创建、更新、销毁容器
 - Kube-Proxy：提供集群内部的服务发现和负载均衡
 - [[Docker]] (或其他替代品): 容器相关操作
@@ -42,13 +42,13 @@ Kubernetes is a software system for automating the deployment and management of 
 
 ### Pod 创建流程
 
-**在 Kubernetes 环境启动之后，Master节点和Node节点都会将自身的信息存储到etcd**
+**在 Kubernetes 环境启动之后，Master 节点和 Node 节点都会将自身的信息存储到 etcd**
 
--   客户端提交Pod的配置信息（可以是yaml文件定义好的信息）到kube-apiserver；
--   Apiserver收到指令后，通知给controller-manager创建一个资源对象；
--   Controller-manager通过api-server将pod的配置信息存储到ETCD数据中心中；
--   Kube-scheduler检测到pod信息会开始调度预选，会先过滤掉不符合Pod资源配置要求的节点，然后开始调度调优，主要是挑选出更适合运行pod的节点，然后将pod的资源配置单发送到node节点上的kubelet组件上。
--   Kubelet根据scheduler发来的资源配置单运行pod，运行成功后，将pod的运行信息返回给scheduler，scheduler将返回的pod运行状况的信息存储到etcd数据中心。
+- 客户端提交 Pod 的配置信息（可以是 yaml 文件定义好的信息）到 kube-apiserver；
+- Apiserver 收到指令后，通知给 controller-manager 创建一个资源对象；
+- Controller-manager 通过 api-server 将 pod 的配置信息存储到 ETCD 数据中心中；
+- Kube-scheduler 检测到 pod 信息会开始调度预选，会先过滤掉不符合 Pod 资源配置要求的节点，然后开始调度调优，主要是挑选出更适合运行 pod 的节点，然后将 pod 的资源配置单发送到 node 节点上的 kubelet 组件上。
+- Kubelet 根据 scheduler 发来的资源配置单运行 pod，运行成功后，将 pod 的运行信息返回给 scheduler，scheduler 将返回的 pod 运行状况的信息存储到 etcd 数据中心。
 
 `Nginx-deployment.yml` 案例
 
@@ -91,30 +91,30 @@ spec:
 
 - **Master**：集群控制节点，每个集群需要至少一个 master 节点来负责集群的管控。
 - **Node**：工作负载节点，由 master 分配容器到这些 node 工作节点上，然后 node 节点上的 docker 负责容器的运行。
-- **Pod**：Kubernetes 的最小控制单元，容器都是运行在 pod 中的，一个 pod 中可以有1个或者多个容器。
-- **Controller**：控制器，通过它来实现对 pod 的管理，比如启动 pod、停止 pod、伸缩 pod 的数量等等。 
-- **Service**：pod 对外服务的统一入口，下面可以维护者同一类的多个 pod。 
-- **Label**：标签，用于对 pod 进行分类 
+- **Pod**：Kubernetes 的最小控制单元，容器都是运行在 pod 中的，一个 pod 中可以有 1 个或者多个容器。
+- **Controller**：控制器，通过它来实现对 pod 的管理，比如启动 pod、停止 pod、伸缩 pod 的数量等等。
+- **Service**：pod 对外服务的统一入口，下面可以维护者同一类的多个 pod。
+- **Label**：标签，用于对 pod 进行分类
 - **Name Space**：命名空间，用来隔离 k8s 的各类资源
 
 ### Pod
 
-Pod 的创建都是通过 `SyncPod` 来实现的，创建的过程大体上可以分为六个步骤：
+Pod 的创建都是通过  `SyncPod`  来实现的，创建的过程大体上可以分为六个步骤：
 
-1.  计算 Pod 中沙盒和容器的变更；
-2.  强制停止 Pod 对应的沙盒；
-3.  强制停止所有不应该运行的容器；
-4.  为 Pod 创建新的沙盒；
-5.  创建 Pod 规格中指定的初始化容器；
-6.  依次创建 Pod 规格中指定的常规容器；
+1. 计算 Pod 中沙盒和容器的变更；
+2. 强制停止 Pod 对应的沙盒；
+3. 强制停止所有不应该运行的容器；
+4. 为 Pod 创建新的沙盒；
+5. 创建 Pod 规格中指定的初始化容器；
+6. 依次创建 Pod 规格中指定的常规容器；
 
 #### 容器启动
 
-1.  通过镜像拉取器获得当前容器中使用镜像的引用；
-2.  调用远程的 `runtimeService` 创建容器；
-3.  调用内部的生命周期方法 `PreStartContainer` 为当前的容器设置分配的 CPU 等资源；
-4.  调用远程的 `runtimeService` 开始运行镜像；
-5.  如果当前的容器包含 `PostStart` 钩子就会执行该回调；
+1. 通过镜像拉取器获得当前容器中使用镜像的引用；
+2. 调用远程的  `runtimeService`  创建容器；
+3. 调用内部的生命周期方法  `PreStartContainer`  为当前的容器设置分配的 CPU 等资源；
+4. 调用远程的  `runtimeService`  开始运行镜像；
+5. 如果当前的容器包含  `PostStart`  钩子就会执行该回调；
 
 #### Pod Network
 
@@ -147,8 +147,8 @@ Pods are connected to each other and to the node's `eth0` interface via a bridge
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 - [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 - [谈 Kubernetes 的架构设计与实现原理](https://draveness.me/understanding-kubernetes/)
-- [深入k8s](https://www.luozhiyun.com/archives/tag/%e6%b7%b1%e5%85%a5k8s)
+- [深入 k8s](https://www.luozhiyun.com/archives/tag/%e6%b7%b1%e5%85%a5k8s)
 - [ ] [Understanding kubernetes networking: pods](https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727)
 - [Containers vs. Pods - Taking a Deeper Look](https://iximiuz.com/en/posts/containers-vs-pods/)
-    - 利用示例，解释了容器和Pod之间的关系
+  - 利用示例，解释了容器和 Pod 之间的关系
 - [Kubernetes in Action](https://wangwei1237.github.io/Kubernetes-in-Action-Second-Edition/docs)

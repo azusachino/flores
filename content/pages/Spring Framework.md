@@ -1,31 +1,31 @@
 ---
 title: Spring Framework
-created: 2022-10-01 10:36:01
-modified: 2023-03-26 11:19:47
+created: 2022-10-01 18:36:01
+modified: 2023-03-27 10:29:20
 aliases: [Spring 框架]
 tags: [CS, Java]
 ---
 
 ## Spring Bean 生命周期
 
--   实例化 Bean 对象。
--   设置 Bean 属性。
--   如果我们通过各种 Aware 接口声明了依赖关系，则会注入 Bean 对容器基础设施层面的依赖。具体包括 BeanNameAware、BeanFactoryAware 和 ApplicationContextAware，分别会注入 Bean ID、Bean Factory 或者 ApplicationContext。
--   调用 BeanPostProcessor 的前置初始化方法 postProcessBeforeInitialization。
--   如果实现了 InitializingBean 接口，则会调用 afterPropertiesSet 方法。
--   调用 Bean 自身定义的 init 方法。
--   调用 BeanPostProcessor 的后置初始化方法 postProcessAfterInitialization。
--   创建过程完毕。
+- 实例化 Bean 对象。
+- 设置 Bean 属性。
+- 如果我们通过各种 Aware 接口声明了依赖关系，则会注入 Bean 对容器基础设施层面的依赖。具体包括 BeanNameAware、BeanFactoryAware 和 ApplicationContextAware，分别会注入 Bean ID、Bean Factory 或者 ApplicationContext。
+- 调用 BeanPostProcessor 的前置初始化方法 postProcessBeforeInitialization。
+- 如果实现了 InitializingBean 接口，则会调用 afterPropertiesSet 方法。
+- 调用 Bean 自身定义的 init 方法。
+- 调用 BeanPostProcessor 的后置初始化方法 postProcessAfterInitialization。
+- 创建过程完毕。
 
 ![[../images/spring-bean-lifecycle.png]]
 
 ## 常见问题
 
-1. 了解Spring约定的默认扫描域
-2. 注意Bean的构造方法
-3. 注意原型作用域的Bean与Autowired的搭配
+1. 了解 Spring 约定的默认扫描域
+2. 注意 Bean 的构造方法
+3. 注意原型作用域的 Bean 与 Autowired 的搭配
 
-### 原型Bean被固定
+### 原型 Bean 被固定
 
 ```java
 // 原型Scopde的Bean
@@ -49,16 +49,16 @@ public class HelloWorldController {
 }
 ```
 
-现象是，该接口始终返回同一个地址的ServiceImpl；定义的Prototype Scope未生效。
+现象是，该接口始终返回同一个地址的 ServiceImpl；定义的 Prototype Scope 未生效。
 
-分析：当一个属性成员被声明为 `@Autowired` 后，在创建该类Bean时，会先使用构造器反射出实例，然后再装配各个标记为 `@Autowired` 的属性成员（`AbstractAutowireCapableBeanFactory#populateBean`）
+分析：当一个属性成员被声明为 `@Autowired` 后，在创建该类 Bean 时，会先使用构造器反射出实例，然后再装配各个标记为 `@Autowired` 的属性成员（`AbstractAutowireCapableBeanFactory#populateBean`）
 
 待找到要自动注入的 Bean 后，即可通过反射设置给对应的 field。这个 field 的 set 只发生了一次，所以后续就固定起来了，它并不会因为 `ServiceImpl` 标记了
 SCOPE_PROTOTYPE 而改变。
 
 #### 解决方案
 
-**自动注入Context**
+**自动注入 Context**
 
 ```java
 HelloWorldController {
@@ -74,7 +74,7 @@ HelloWorldController {
 }
 ```
 
-**通过LookUp注解**
+**通过 LookUp 注解**
 
 ```java
 ...
@@ -88,11 +88,11 @@ HelloWorldController {
 
 ### Autowired 使用
 
-Autowired 默认是 required 模式，Bean的数量不能为0，也不能大于1。
+Autowired 默认是 required 模式，Bean 的数量不能为 0，也不能大于 1。
 
-Bean的默认名称规则：如果一个类名是以两个大写字母开头的，则首字母不变，其它情况下默认首字母变成小写。
+Bean 的默认名称规则：如果一个类名是以两个大写字母开头的，则首字母不变，其它情况下默认首字母变成小写。
 
-如何引用内部类的Bean：`studentController.InnerClassDataService` (`ClassUtils.getShortName(beanClassName)`)
+如何引用内部类的 Bean：`studentController.InnerClassDataService` (`ClassUtils.getShortName(beanClassName)`)
 
 ### Value 使用
 
@@ -138,7 +138,7 @@ private String name;
 
 ![[../images/spring-aop-lifecycle.png]]
 
-通过 `@Autowired` 可以获取该Bean的代理增强类
+通过 `@Autowired` 可以获取该 Bean 的代理增强类
 
 ```java
 @Service
@@ -146,7 +146,7 @@ public class ElectricService {
 
     @Autowired
     private ElectricService es;
-    
+
     public void charge() {
         sout("charging...");
         // this 是当前类的普通对象，不受aop监管
@@ -154,7 +154,7 @@ public class ElectricService {
         // 自动注入的对象是proxy代理类
         this.es.pay();
     }
-    
+
     public void pay() {
         sout("paying...");
         Thread.sleep(1000L);
@@ -165,7 +165,7 @@ public class ElectricService {
 
 1. 使用 AOP，实际上就是让 Spring 自动为我们创建一个 Proxy，使得调用者能无感知地调用指定方法。而 Spring 有助于我们在运行期里动态织入其它逻辑，因此，AOP 本质上就是一个动态代理。
 2. 我们只有访问这些代理对象的方法，才能获得 AOP 实现的功能，所以通过 this 引用是无法正确使用 AOP 功能的。在不能改变代码结果前提下，我们可以通过@Autowired、AopContext.currentProxy() 等方式获取相应的代理对象来实现所需的功能。
-3. 我们一般不能直接从代理类中去拿被代理类的属性，这是因为除非我们显示设置spring.objenesis.ignore 为 true，否则代理类的属性是不会被 Spring 初始化的，我们可以通过在被代理类中增加一个方法来间接获取其属性。
+3. 我们一般不能直接从代理类中去拿被代理类的属性，这是因为除非我们显示设置 spring.objenesis.ignore 为 true，否则代理类的属性是不会被 Spring 初始化的，我们可以通过在被代理类中增加一个方法来间接获取其属性。
 
 在同一个切面配置中，如果存在多个不同类型的增强，那么其执行优先级是按照增强类型的特定顺序排列，依次的增强类型为 Around.class, Before.class, After.class,AfterReturning.class, AfterThrowing.class；
 
@@ -229,11 +229,11 @@ public class Phone {
 
 ### Spring MVC Filter
 
-WebFilter 的全名是 javax.servlet.annotation.WebFilter，很明显，它并不属于Spring，而是 Servlet 的规范。当 Spring Boot 项目中使用它时，Spring Boot 使用了`org.springframework.boot.web.servlet.FilterRegistrationBean` 来包装 @WebFilter 标
+WebFilter 的全名是 javax.servlet.annotation.WebFilter，很明显，它并不属于 Spring，而是 Servlet 的规范。当 Spring Boot 项目中使用它时，Spring Boot 使用了`org.springframework.boot.web.servlet.FilterRegistrationBean` 来包装 @WebFilter 标
 记的实例。
 
 本质上，过滤器被 @WebFilter 修饰后，TimeCostFilter 只会被包装为 `FilterRegistrationBean` ，而 TimeCostFilter 自身，只会作为一个 InnerBean 被实例化，这意味着 TimeCostFilter 实例并不会作为 Bean 注册到 Spring 容器。
 
 ## References
 
- - Spring常见业务问题 - 极客时间
+- Spring 常见业务问题 - 极客时间

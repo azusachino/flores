@@ -1,13 +1,13 @@
 ---
 title: Theory 2022
-created: 2022-09-17 08:00:00
-modified: 2023-02-24 14:20:42
+created: 2022-09-17 16:00:00
+modified: 2023-03-27 10:21:56
 tags: [Collection, Theory]
 ---
 
 > [!abstract] 情绪 ABC 理论
 > 它把我们对事物态度的成因分成三种，分别是：外界事件 (Activating event)，信念 (Belief) 和情绪反应(Consequence)。
-> 
+>
 > 这一理论的核心内涵是：情绪的产生不是必然的。我们依据已有的信念，对外界事件进行解读，从而产生对应的情绪反应。如果我们的信念发生改变，那么产生的情绪也会随之改变。
 
 > [!abstract] 福格行为模型

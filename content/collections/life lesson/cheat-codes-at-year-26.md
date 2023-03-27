@@ -1,23 +1,23 @@
 ---
 title: Cheat Codes for Life I Know at 36 That I Wish I Knew at 26
-created: 2022-08-21 00:00:00
-modified: 2022-12-05 14:05:33
+created: 2022-08-21 08:00:00
+modified: 2023-03-27 10:08:20
 tags: [Collection, Life, Growth]
 ---
 
 1. When you get lots of rejections you stop fearing it. This makes you unstoppable.
 2. Busyness is a sign of poverty that will eventually lead to personal bankruptcy.
-    1. Prioritize 2–3 goals and ditch the rest.
+   1. Prioritize 2–3 goals and ditch the rest.
 3. The world wants you to be normal. Fuck being normal. That's when being extraordinary becomes impossible.
 4. Most people don't want to go to work. They just don't know what else to do.
 5. Watch how people treat service workers. It tells you a lot about their character.
-    1. 从对待公众服务人员的态度上看出ta的品性
+   1. 从对待公众服务人员的态度上看出 ta 的品性
 6. Working for yourself means you can earn less income than a normal salary and still make more due to tax reasons.
 7. Finding out you're going to be a parent is one of the greatest feelings in the world.
 8. Everything in life has a price.
-    1. 所有事物都是明码标价的
+   1. 所有事物都是明码标价的
 9. Life is you versus who you were 12 months ago. All other competition is bullshit.
-    1. 只有你还在成长，那么一切就还有希望
+   1. 只有你还在成长，那么一切就还有希望
 10. When tragedy strikes and you go quiet, the people who reach out are your true friends.
     1. 患难见真情
 11. Every email you send is likely to attract another email.

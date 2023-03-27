@@ -1,7 +1,7 @@
 ---
 title: The Many Worlds of Enough
-created: 2022-09-01 02:40:54
-modified: 2023-03-26 11:19:48
+created: 2022-09-01 10:40:54
+modified: 2023-03-27 10:38:17
 tags: [Article, Life, Philosophy, MoreToThat]
 ---
 
@@ -14,7 +14,7 @@ tags: [Article, Life, Philosophy, MoreToThat]
 
 人总是处在变化之中，小时候的你可能想成为宇航员；毕业工作的你可能只想在家里摆烂。我们永远无法达到「理想状态」，我们在变，理想在变。**It's impossible to Reach the stage of Enough**
 
-Many World aka Parallel Universe or Multiverse 也许可以参考「多重宇宙理论」，我们所做的A/B两个选择会使得我们进入不同的两个线性宇宙中。
+Many World aka Parallel Universe or Multiverse 也许可以参考「多重宇宙理论」，我们所做的 A/B 两个选择会使得我们进入不同的两个线性宇宙中。
 
 Each time when we progress, we create a new identity, and the goal will change along it.
 ![[../../images/stages-to-your-goal.png]]

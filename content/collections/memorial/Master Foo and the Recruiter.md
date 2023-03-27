@@ -1,7 +1,7 @@
 ---
 title: The fisherman and the businessman
-created: 2022-08-20 00:00:00
-modified: 2022-12-05 14:05:33
+created: 2022-08-20 08:00:00
+modified: 2023-03-27 10:08:50
 tags: [Memorial, CS, Philosophy]
 ---
 

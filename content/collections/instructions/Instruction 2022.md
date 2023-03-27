@@ -1,7 +1,7 @@
 ---
 title: Instruction 2022
-created: 2022-08-25 00:00:00
-modified: 2023-02-15 09:04:01
+created: 2022-08-25 08:00:00
+modified: 2023-03-27 10:08:14
 tags: [Collection, Instruction]
 ---
 
@@ -145,7 +145,7 @@ route {
 
 make sure your `~/.ssh` is not over `600`.
 
-```
+```sh
 # 1. setup authorized_keys
 # 2. config `/etc/ssh/sshd_config`
 vim /etc/ssh/sshd_config
@@ -159,7 +159,7 @@ systemctl restart sshd
 
 ## Install Docker
 
-```
+```sh
 # 1. check remaining stuffs and clean
 sudo yum remove docker \
                   docker-client \

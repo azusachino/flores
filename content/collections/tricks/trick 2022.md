@@ -1,7 +1,7 @@
 ---
 title: trick 2022
-created: 2022-09-19 00:00:00
-modified: 2022-12-19 10:32:29
+created: 2022-09-19 08:00:00
+modified: 2023-03-27 10:22:15
 tags: [Collection, Trick]
 ---
 
@@ -33,8 +33,8 @@ chrome://sync-internals/
 gu -L install local_abc.jar
 ```
 
-1.  Navigate to [GraalVM Releases repository on GitHub](https://github.com/graalvm/graalvm-ce-builds/releases). Select Java 11 based or Java 17 based distribution for macOS, and download.
-2.  Unzip the archive.
+1. Navigate to [GraalVM Releases repository on GitHub](https://github.com/graalvm/graalvm-ce-builds/releases). Select Java 11 based or Java 17 based distribution for macOS, and download.
+2. Unzip the archive.
 
     ```shell
     tar -xzf graalvm-ce-java<version>-darwin-amd64-<version>.tar.gz
@@ -48,7 +48,7 @@ gu -L install local_abc.jar
     >  sudo xattr -r -d com.apple.quarantine /path/to/graalvm
     > ```
 
-3.  Move the downloaded package to its proper location, the `/Library/Java/JavaVirtualMachines` directory. Since this is a system directory, `sudo` is required:
+3. Move the downloaded package to its proper location, the `/Library/Java/JavaVirtualMachines` directory. Since this is a system directory, `sudo` is required:
 
     ```shell
       sudo mv graalvm-ce-java<version>-<version> /Library/Java/JavaVirtualMachines
@@ -56,7 +56,8 @@ gu -L install local_abc.jar
 
     To verify if the move is successful and to get a list of all installed JDKs, run `/usr/libexec/java_home -V`.
 
-4.  There can be multiple JDKs installed on the machine. The next step is to configure the runtime environment:
+4. There can be multiple JDKs installed on the machine. The next step is to configure the runtime environment:
+
     - Point the `PATH` environment variable to the GraalVM `bin` directory:
 
       ```shell
@@ -68,11 +69,12 @@ gu -L install local_abc.jar
       ```shell
        export JAVA_HOME=/Library/Java/JavaVirtualMachines/<graalvm>/Contents/Home
       ```
-5.  To check whether the installation was successful, run the `java -version` command.
+
+5. To check whether the installation was successful, run the `java -version` command.
 
 ### SSH-KEYGEN
 
-```
+```sh
 ssh-keygen -t rsa -b 4096 -C your_email.com
 ```
 

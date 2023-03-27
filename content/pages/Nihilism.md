@@ -1,7 +1,7 @@
 ---
 title: Nihilism
-created: 2022-08-21 08:00:00
-modified: 2022-12-05 14:05:27
+created: 2022-08-21 16:00:00
+modified: 2023-03-27 10:28:45
 aliases: [虚无主义]
 tags: [Philosophy]
 ---
@@ -11,15 +11,15 @@ tags: [Philosophy]
 ## Wikipedia
 
 - Rejects generally accepted or fundamental aspects of human existence
-	- objective truth
-	- knowledge
-	- morality
-	- values
-	- meaning
+  - objective truth
+  - knowledge
+  - morality
+  - values
+  - meaning
 - Different nihilist positions hold variously that human values are baseless
-	- life is meaningless
-	- knowledge is impossible
-	- some set of entities do not exist or are meaningless or pointless
+  - life is meaningless
+  - knowledge is impossible
+  - some set of entities do not exist or are meaningless or pointless
 
 ## Some Thoughts
 

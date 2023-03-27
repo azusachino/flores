@@ -1,7 +1,7 @@
 ---
 title: 宇宙中最大的黑洞
-created: 2022-08-23 00:00:00
-modified: 2022-12-05 14:05:24
+created: 2022-08-23 08:00:00
+modified: 2023-03-27 10:21:10
 tags: [Watching, Astronomy, Kurzgesagt]
 ---
 
@@ -10,11 +10,11 @@ Largest Star Ever Existed: Quasi Star (Thousands time bigger of our Sun)
 ## Type Ranks
 
 - Primordial [[Black Hole]]
-	- 尚未被观测到的[[Black Hole|黑洞]]
-	- 理论上在BigBang之后的宇宙前期产生
+  - 尚未被观测到的[[Black Hole|黑洞]]
+  - 理论上在 BigBang 之后的宇宙前期产生
 - General [[Black Hole]]
 - Quasi [[Black Hole]]
-	- Quasi Star Merges
+  - Quasi Star Merges
 - Supermassive [[Black Hole]]
 - Ultra Supermassive [[Black Hole]]
 
@@ -26,7 +26,7 @@ Largest Star Ever Existed: Quasi Star (Thousands time bigger of our Sun)
 - M33 X-7
 - GW190521
 - Earth
-- Sagittarius A*
+- Sagittarius A\*
 - BL Lacertae
 - Stephenson 2-18 (Largest Star)
 - Cygnus A Black Hole

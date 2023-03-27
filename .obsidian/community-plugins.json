@@ -1,19 +1,10 @@
 [
-  "table-editor-obsidian",
-  "calendar",
   "dataview",
-  "obsidian-excalidraw-plugin",
   "templater-obsidian",
   "obsidian-mind-map",
-  "obsidian-outliner",
-  "obsidian-kanban",
   "update-time-on-edit",
-  "better-word-count",
-  "oz-image-plugin",
   "cm-editor-syntax-highlight-obsidian",
-  "obsidian-linter",
   "tag-wrangler",
   "obsidian-minimal-settings",
-  "obsidian-admonition",
-  "obsidian-annotator"
+  "obsidian-admonition"
 ]

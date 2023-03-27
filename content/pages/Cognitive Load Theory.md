@@ -1,7 +1,7 @@
 ---
 title: 认知负载理论
-created: 2022-08-22 00:00:00
-modified: 2023-03-26 11:19:47
+created: 2022-08-22 08:00:00
+modified: 2023-03-27 10:24:14
 aliases: [认知负载理论]
 tags: [Theory]
 ---

@@ -1,7 +1,7 @@
 ---
 title: Deadly Optimism, Useful Pessimism
-created: 2022-08-25 00:00:00
-modified: 2022-12-05 14:05:27
+created: 2022-08-25 08:00:00
+modified: 2023-03-27 10:36:22
 tags: [Article, Psychology]
 ---
 
@@ -15,16 +15,16 @@ Most people's brains have soaked for decades in a marinade[^1] of rosy expectati
 
 ## Pervasive Optimism
 
-Since the 1950s, forecasts for the human future could be summarized by the adjectives _more, bigger,_ and _faster_.
+Since the 1950s, forecasts for the human future could be summarized by the adjectives *more, bigger,* and *faster*.
 
 This pervasive optimism was based on the actual experience of much of humanity, which saw wonders unfold throughout the 20th century (though a large number of people were not invited to the feast; indeed, their lives, labor, and resources were part of the menu).
 
 Optimism was a self-reinforcing feedback: the system delivered more, people came to expect more, so the system was primed to deliver still more.
 
-20世纪的人们是被动乐观，21世纪的我们马上要变得被动消极了。
+20 世纪的人们是被动乐观，21 世纪的我们马上要变得被动消极了。
 
-20世纪，各项新技术、新事物蓬勃而出，一片欣欣向荣之景；
-21世纪，开始偿还年少无知时所欠下的技术债务了，矿产的过度开采、自然环境的肆意破坏、全球变暖，肉眼可见的「悲剧」将越来越多。
+20 世纪，各项新技术、新事物蓬勃而出，一片欣欣向荣之景；
+21 世纪，开始偿还年少无知时所欠下的技术债务了，矿产的过度开采、自然环境的肆意破坏、全球变暖，肉眼可见的「悲剧」将越来越多。
 
 人们的生活质量越来越好，生活节奏越来越快；难道幸福度能够一直指数级增长吗？还是说未知的悲剧「巨大落差」已经在路上了。
 
