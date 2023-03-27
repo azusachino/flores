@@ -56,6 +56,11 @@ Reset password with cli
 6. 运行 ./vcpkg.exe 集成安装
 7. 运行 set VCPKGRS_DYNAMIC=1(或简单地将其设置为您的环境变量)
 
+## Format all files in vscode
+
+1. install extension `Format files`
+2. `Crtl+Shift+P` and select `Start to format`
+
 ## References
 
 - [windows - 如何在 Windows 开发环境中使用 OpenSSL for Rust](https://www.coder.work/article/976641)
