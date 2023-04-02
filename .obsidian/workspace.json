@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
-                "mode": "source",
+                "file": "content/pages/Cache.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
@@ -71,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.5
+    "width": 293.5
   },
   "right": {
     "id": "b9c5f39a1a3c938e",
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/pages/Cache.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/pages/Cache.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/pages/Cache.md"
               }
             }
           },
@@ -148,6 +148,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -155,19 +156,41 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "random-note:Open random note": false,
-      "workspaces:Manage workspace layouts": false,
-      "templater-obsidian:Templater": false
+      "workspaces:Manage workspace layouts": false
     }
   },
   "active": "642fe8d46103a591",
   "lastOpenFiles": [
+    "content/images/cache-samples.png",
+    "content/reading/columns/数据结构与算法之美.md",
+    "content/reading/columns/趣谈网络协议.md",
+    "content/images/network-protocol-summary.jpg",
+    "content/pages/观星.md",
+    "content/pages/读书.md",
+    "content/pages/脑出血.md",
+    "content/pages/贫血.md",
+    "content/pages/露营.md",
+    "content/pages/音视频技术.md",
+    "content/pages/高血压.md",
+    "content/pages/Abstract Queued Synchronizer.md",
+    "content/images/拉伸髂腰肌.gif",
+    "content/images/活动胸椎.gif",
+    "content/images/勾脚垫脚.gif",
+    "content/images/working-memory-process.png",
+    "content/images/jvm-framework.png",
+    "content/images/k8s-pod-network.png",
+    "content/images/jmm.png",
+    "content/images/java-locks.png",
+    "content/images/java-lock-hierarchy.png",
+    "content/reading/articles/Z世代定义与特征.md",
+    "content/reading/columns/程序员的数学基础课.md",
+    "content/_index.md",
     "content/reading/articles/The Ultimate Guide to Writing Online.md",
     "content/writting/How To Write.md",
     "content/writting/为什么说所有的二元论都可以放置在光谱之上.md",
     "content/collections/instructions/Instruction 2022.md",
     ",markdownlint.json",
     "content/collections/instructions/Instruction 2023.md",
-    "content/_index.md",
     "content/reading/columns/Java并发编程实战.md",
     "content/reading/columns/Go语言第一课.md",
     "content/pages/Concurrent Programming.md",
@@ -175,18 +198,6 @@
     "content/pages/Cognitive Load Theory.md",
     "content/pages/Bruce Lee.md",
     "content/pages/Brain.md",
-    "content/pages/Black Hole.md",
-    "content/pages/Aperture.md",
-    "content/pages/Abstract Queued Synchronizer.md",
-    "content/reading/weread/计算机/计算机是怎样跑起来的.md",
-    "content/topics/Weread.md",
-    "content/topics/LeetCode.md",
-    "content/topics/Hypothesis.md",
-    "content/topics/Health.md",
-    "content/topics/CS.md",
-    "content/topics/Columns.md",
-    "content/topics/Articles.md",
-    "content/writting/体温过高的危害.md",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
     "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
@@ -195,11 +206,6 @@
     "resources/_gen/assets/scss/styles/_callouts.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
     "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
     "resources/_gen/assets/scss/styles/syntax.scss_0ccffbd39a5ea808aa33646cb7c2a662.content",
-    "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.json",
-    "assets/concurrent-programming.png",
-    "reading/books/System Design Interview.md",
-    "assets/system-design-architecture.png",
-    "assets/load-balancer-api-gateway.png",
-    "assets/integrated-circuit.png"
+    "resources/_gen/assets/scss/styles/darkmode.scss_0ccffbd39a5ea808aa33646cb7c2a662.json"
   ]
 }

@@ -1,20 +1,18 @@
 ---
 title: Java核心技术面试精讲
-created: 2023-01-05 17:00:00
-modified: 2023-01-12 13:59:11
+created: 2023-01-06 09:00:00
+modified: 2023-03-30 15:59:53
 tags: [Column, Tech, Java]
 author: 杨晓峰
 read: 16
 total: 39
 ---
 
-Cloud Native Java
-
 ## Java 基础
 
 ### 谈谈你对 Java 平台的理解
 
-Java 是一门面向对象的语言，有两个显著特性：Write Once, Run Anywhere; Garbage Collection。
+Java 是一门面向对象的语言，有两个显著特性：跨平台、GC。
 
 Java 中的 Class Loader
 
@@ -22,23 +20,70 @@ Java 中的 Class Loader
 - Extension
 - Application
 
-加载、验证、链接、初始化
-
 ### Java 是解释运行吗
 
-Java 中存在 JIT (Just In Time Compiler)，在运行时将部分热点代码编译成机器码执行，在这种情况下就不是纯粹的解释运行了。
+不完全是；Java 中存在 JIT (Just In Time Compiler)，会在运行时将部分热点代码编译成机器码执行。默认阈值为 1500 次。
+
+- c1 client 1500
+- c2 server
+
+`-Xint` 只解释执行；`-Xcomp` 关闭解释执行，仅编译执行，可能导致服务启动效率变低。
 
 ### Exception 与 Error 有什么区别
 
-1. Error，系统错误，虚拟机出错，我们处理不了，也不需要我们来处理。
-2. Exception，可以捕获的异常，且作出处理。也就是要么捕获异常并作出处理，要么继续抛出异常。
-3. RuntimeException，经常性出现的错误，可以 捕获，并作出处理，可以不捕获，也可以不用抛出。
+Error 和 Exception 都是 Throwable 的子类；在 Java 中，只有 Throwable 才能被 throw 和 catch。
+
+1. Error 是指在正常情况下，不大可能出现的情况，绝大部分的 Error 都会导致程序（比如 JVM 自身）处于非正常的、不可恢复状态。既然是非正常情况，所以不便于也不需要捕获，常见的比如 OutOfMemoryError 之类，都是 Error 的子类。
+2. Exception 又分为可检查（checked）异常和不检查（unchecked）异常
+   1. 可检查异常在源代码里必须显式地进行捕获处理，这是编译期检查的一部分。
+   2. 不检查异常就是所谓的运行时异常，类似 NullPointerException、ArrayIndexOutOfBoundsException 之类，通常是可以编码避免的逻辑错误，具体根据需要来判断是否需要捕获，并不会在编译期强制要求。
+
+**NoClassDefFoundError 与 ClassNotFoundException**
+
+- NoClassDefFoundError is a fatal error. It occurs when JVM can not find the definition of the class while trying to:
+  - Instantiate a class by using the new keyword
+  - Load a class with a method call
+- ClassNotFoundException is a checked exception which occurs when an application tries to load a class through its fully-qualified name and can not find its definition on the classpath. `Class.forName('')`
+
+```java
+@Test(expected = ClassNotFoundException.class)
+public void givenNoDrivers_whenLoadDriverClass_thenClassNotFoundException()
+  throws ClassNotFoundException {
+      Class.forName("oracle.jdbc.driver.OracleDriver");
+}
+
+public class ClassWithInitErrors {
+    static int data = 1 / 0;
+}
+
+// The error occurs when a compiler could successfully compile the class, but Java runtime could not locate the class file. It usually happens when there is an exception while executing a static block or initializing static fields of the class, so class initialization fails.
+public class NoClassDefFoundErrorExample {
+    public ClassWithInitErrors getClassWithInitErrors() {
+        ClassWithInitErrors test;
+        try {
+            test = new ClassWithInitErrors();
+        } catch (Throwable t) {
+            System.out.println(t);
+        }
+        test = new ClassWithInitErrors();
+        return test;
+    }
+}
+```
 
 ### 谈谈 final、finally、 finalize 有什么不同
 
 - final 可以用来修饰类、方法、变量，分别有不同的意义，final 修饰的 class 代表不可以继承扩展，final 的变量是不可以修改的，而 final 的方法也是不可以重写的（override）。
 - finally 则是 Java 保证重点代码一定要被执行的一种机制。我们可以使用 try-finally 或者 try-catch-finally 来进行类似关闭 JDBC 连接、保证 unlock 锁等动作。
 - finalize 是基础类 `java.lang.Object` 的一个方法，它的设计目的是保证对象在被垃圾收集前完成特定资源的回收。finalize 机制现在已经不推荐使用，并且在 JDK 9 开始被标记为 deprecated。
+
+```java
+try {
+  System.exit(1);
+} finally {
+  // 不会执行
+}
+```
 
 ### 强引用、软引用、弱引用、幻象引用有什么区别
 
@@ -129,6 +174,21 @@ Java 中存在 JIT (Just In Time Compiler)，在运行时将部分热点代码�
 34. Lambda 对 Java 程序的影响
 35. JVM 是如何优化 Java 代码的
 
+## 推荐书单
+
+- 《Java 编程思想》
+- 《Java 核心技术》
+- 《Effective Java》
+- 《设计模式之禅》
+- 《Java 并发实战》
+- 《深入理解 Java 虚拟机》
+- 《Java 性能优化权威指南》
+- 《Spring 实战》
+- 《Netty 实战》
+- 《Cloud Native Java》
+- 《深入分布式缓存》
+
 ## References
 
 - [Java 核心技术面试精讲](https://time.geekbang.org/column/intro/100006701)
+- [ClassNotFoundException vs NoClassDefFoundError](https://www.baeldung.com/java-classnotfoundexception-and-noclassdeffounderror)

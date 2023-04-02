@@ -1,7 +1,7 @@
 ---
 title: The Quest to the Unlived Life
-created: 2022-09-01 03:36:57
-modified: 2023-03-27 10:38:12
+created: 2022-09-01 11:36:57
+modified: 2023-03-28 17:24:12
 tags: [Article, Life, Philosophy, MoreToThat]
 ---
 
@@ -9,7 +9,7 @@ tags: [Article, Life, Philosophy, MoreToThat]
 
 ## 三大拦路虎 & 解决方案
 
-![image.png](../../images/image_1660100021783_0.png)
+![image.png](../../images/effort-results-graph.png)
 
 ### Laziness - **Perception** 懒惰
 

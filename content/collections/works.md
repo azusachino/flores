@@ -5,7 +5,7 @@ modified: 2023-03-27 10:23:31
 tags: [Collection, Work]
 ---
 
-### [日本肉翻 会英语即可]移动支付公司 PayPay ペイペイ各种职位内推
+## [日本肉翻 会英语即可]移动支付公司 PayPay ペイペイ各种职位内推
 
 在这里可以看到职位： [https://boards.greenhouse.io/paypay](https://boards.greenhouse.io/paypay) 。
 
@@ -23,3 +23,8 @@ tags: [Collection, Work]
 我是 2020 年十月投的简历，笔试不难，面试也不难，前两面问了些问题之后写码，写码题比较简单。第三面是主管面，没有写码，但是技术相关的可能问得细一些。
 
 想来日本的话就把想投的职位名称和英文简历发我吧，邮箱是  torapture@gmail.com 。
+
+## Resources
+
+- [TokyoDev](https://www.tokyodev.com/)
+- [Handbook](https://github.com/eliaszon/Programmers-Overseas-Job-Interview-Handbook)

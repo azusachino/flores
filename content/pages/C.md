@@ -1,7 +1,7 @@
 ---
 title: C语言
-created: 2022-08-22 16:00:00
-modified: 2022-12-15 18:50:37
+created: 2022-08-23 00:00:00
+modified: 2023-04-01 22:23:31
 tags: [CS, ProgrammingLanguage]
 ---
 
@@ -41,6 +41,11 @@ int main() {
 #### Socket & File Descriptor
 
 A socket is an abstract representation of a network connection, and a file descriptor is a low-level integer identifier that is used to access a file or other input/output resource.
+
+## Resources
+
+- [Beej's Guide to C Programming](https://beej.us/guide/bgc/)
+- [CSE325 Lecture Videos](https://www.youtube.com/playlist?list=PL3GWPKM6L17H0RyU2o7p9gCnepjSTaHia)
 
 ## References
 

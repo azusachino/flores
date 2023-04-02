@@ -1,7 +1,7 @@
 ---
 title: Z世代定义与特征
-created: 2022-09-01 08:21:20
-modified: 2023-03-27 10:37:52
+created: 2022-09-01 16:21:20
+modified: 2023-03-28 17:20:20
 tags: [Article, Life]
 ---
 
@@ -12,13 +12,7 @@ tags: [Article, Life]
   - 同时日常生活习惯有同等的技术、产品、环境的支持，从而增强了对这一群人特征的可预测性，最终塑造了相似的消费观
 - 信息媒介、社会事件、成长周期
 - 历史事件、年龄段
-- ![640.png](../../images/640_1658749667604_0.png)
-- ![641.png](../../images/641_1658749674897_0.png)
-- ![642.png](../../images/642_1658749678201_0.png)
-- ![643.png](../../images/643_1658749682511_0.png)
-- ![644.png](../../images/644_1658749685786_0.png)
-- ![645.png](../../images/645_1658749704887_0.png)
 
 ## References
 
-- 阅读 [Z 世代定义与特征](https://mp.weixin.qq.com/s/2NCxms2OsCBYRpmAHUQ4ug)
+- [Z 世代定义与特征](https://mp.weixin.qq.com/s/2NCxms2OsCBYRpmAHUQ4ug)

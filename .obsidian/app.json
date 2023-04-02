@@ -1,6 +1,6 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "assets/images",
+  "attachmentFolderPath": "content/images",
   "newFileLocation": "folder",
   "newFileFolderPath": "content/pages",
   "showUnsupportedFiles": true,
