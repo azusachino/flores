@@ -1,7 +1,7 @@
 ---
 title: note
-created: 2022-09-14 19:59:12
-modified: 2023-03-27 10:25:49
+created: 2022-09-15 03:59:12
+modified: 2023-03-28 17:23:02
 aliases: [High Intensity Interval Training, 高强度间歇性训练]
 tags: [Life, Exercise]
 ---
@@ -13,7 +13,7 @@ tags: [Life, Exercise]
 1. 在训练过程中的主观疲劳感评分达到 7 分，或者无法说出一句完整的话。
 2. 训练过程中用于「训练」的时间相比「休息」的时间尽可能多。
 
-![[../images/rep.png]]
+![[../images/rep-scale.png]]
 
 ## HIIT 的禁忌症和注意事项
 
