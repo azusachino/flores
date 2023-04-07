@@ -1,7 +1,7 @@
 ---
 title: Instruction 2022
-created: 2022-08-25 08:00:00
-modified: 2023-03-27 10:08:14
+created: 2022-08-25 16:00:00
+modified: 2023-04-06 19:20:02
 tags: [Collection, Instruction]
 ---
 
@@ -9,27 +9,27 @@ tags: [Collection, Instruction]
 
 ```sh
 # 1. start and registration
-podman run -d --name vaultwarden -v /iris/vaultwarden/data:/data -p 8081:80 vaultwarden/server:latest
-# 2. remove the container 
+podman run -d --name vaultwarden -v /iris/vaultwarden/data:/data -p 127.0.0.1:8081:80 vaultwarden/server:latest
+# 2. remove the container
 podman stop && podman remove
-# 3. start with no_signup option
-podman run -d --name vaultwarden  -e SIGNUPS_ALLOWED=false -e ADMIN_TOKEN=azusachino1204  -v /iris/vaultwarden/data:/data -p 8081:80 vaultwarden/server:latest
+# 3. start with no_signup option || or update to new version
+podman run -d --name vaultwarden  -e SIGNUPS_ALLOWED=false -e ADMIN_TOKEN=azusachino1204  -v /iris/vaultwarden/data:/data -p 127.0.0.1:8081:80 vaultwarden/server:latest
 ```
 
 ## Anki-sync-server Setup
 
 ```sh
 # 1. Create the container with default user/pass (可能在哪里初始化)
- podman create \
-    --name=anki \
-    -p 27701:27701 \
-    -v /iris/anki/config:/config \
-    -e ANKI_SYNC_SERVER_USER=azusachino@proton.me \
-    -e ANKI_SYNC_SERVER_PASSWORD=azusachino.me \
-    -e UID=1000 \
-    -e GID=1000 \
-    --restart unless-stopped \
-    johngong/anki-sync-server:latest
+podman create \
+  --name=anki \
+  -p 127.0.0.1:27701:27701 \
+  -v /iris/anki/config:/config \
+  -e ANKI_SYNC_SERVER_USER=azusachino@proton.me \
+  -e ANKI_SYNC_SERVER_PASSWORD=azusachino.me \
+  -e UID=1000 \
+  -e GID=1000 \
+  --restart unless-stopped \
+  johngong/anki-sync-server:latest
 # 2. 启动/停止
 podman start/stop anki
 ```
@@ -57,7 +57,7 @@ podman cp $MEDIA_ID:/var/www/data/ /iris/mediawiki
 podman /iris/mediawiki/LocalSettings.php $MEDIA_ID/var/www/html/LocalSettings.php
 # 3. stop the old one
 podman stop $MEDIA_ID && podman rm $MEDIA_ID
-# 4. load the LocalSettings 
+# 4. load the LocalSettings
 podman run -d --name mediawiki -p 8080:80 \
 -v /iris/mediawiki/html/images:/var/www/html/images \
 docker.io/mediawiki:lts
@@ -80,7 +80,7 @@ podman restart $MEDIA_ID
 caddy start --config /iris/caddy/Caddyfile --adapter caddyfile
 ```
 
-目前在用的Caddyfile
+目前在用的 Caddyfile
 
 ```caddy
 azusachino.icu {
@@ -208,8 +208,8 @@ brew install go-task
 ```
 
 ```yml
-version: '3'
-dotenv: ['.env']
+version: "3"
+dotenv: [".env"]
 tasks:
   build:
     cmds:

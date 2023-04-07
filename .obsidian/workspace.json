@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f42bbff676a179aa",
+        "id": "6b9a5047bee08400",
         "type": "tabs",
         "children": [
           {
-            "id": "642fe8d46103a591",
+            "id": "ed90633bfbb02ef0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/pages/Cache.md",
-                "mode": "preview",
+                "file": "content/reading/columns/Java核心技术面试精讲.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/pages/Cache.md",
+                "file": "content/reading/columns/Java核心技术面试精讲.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/pages/Cache.md",
+                "file": "content/reading/columns/Java核心技术面试精讲.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/pages/Cache.md"
+                "file": "content/reading/columns/Java核心技术面试精讲.md"
               }
             }
           },
@@ -159,12 +159,26 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "642fe8d46103a591",
+  "active": "ed90633bfbb02ef0",
   "lastOpenFiles": [
-    "content/images/cache-samples.png",
+    "content/images/jvm-memory-structure.png",
+    "content/images/java-thread-state-circle.png",
+    "content/pages/Java.md",
+    "content/collections/instructions/Instruction 2023.sync-conflict-20230406-181407-5ZIDCG6.md",
+    "content/images/tree-level-terminology.png",
+    "content/images/tcp-package.png",
+    "content/images/tcp-disconnection-handshake.png",
+    "content/images/tcp-connection-handshake.png",
+    "content/images/udp-package.png",
+    "content/images/jmm-structure.png",
     "content/reading/columns/数据结构与算法之美.md",
+    "content/images/sort-algorithms.png",
     "content/reading/columns/趣谈网络协议.md",
-    "content/images/network-protocol-summary.jpg",
+    "content/images/mac-ip-structure.png",
+    "content/images/ping-route.png",
+    "content/reading/columns/Java核心技术面试精讲.md",
+    "content/topics/Columns.md",
+    "content/pages/Cache.md",
     "content/pages/观星.md",
     "content/pages/读书.md",
     "content/pages/脑出血.md",
@@ -173,15 +187,6 @@
     "content/pages/音视频技术.md",
     "content/pages/高血压.md",
     "content/pages/Abstract Queued Synchronizer.md",
-    "content/images/拉伸髂腰肌.gif",
-    "content/images/活动胸椎.gif",
-    "content/images/勾脚垫脚.gif",
-    "content/images/working-memory-process.png",
-    "content/images/jvm-framework.png",
-    "content/images/k8s-pod-network.png",
-    "content/images/jmm.png",
-    "content/images/java-locks.png",
-    "content/images/java-lock-hierarchy.png",
     "content/reading/articles/Z世代定义与特征.md",
     "content/reading/columns/程序员的数学基础课.md",
     "content/_index.md",
@@ -193,11 +198,6 @@
     "content/collections/instructions/Instruction 2023.md",
     "content/reading/columns/Java并发编程实战.md",
     "content/reading/columns/Go语言第一课.md",
-    "content/pages/Concurrent Programming.md",
-    "content/pages/Concensus Theory.md",
-    "content/pages/Cognitive Load Theory.md",
-    "content/pages/Bruce Lee.md",
-    "content/pages/Brain.md",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
     "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",

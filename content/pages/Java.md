@@ -1,7 +1,7 @@
 ---
 title: Java
-created: 2022-09-08 03:17:43
-modified: 2023-03-27 10:26:16
+created: 2022-09-08 11:17:43
+modified: 2023-04-05 22:22:34
 tags: [CS, ProgrammingLanguage]
 ---
 
@@ -352,6 +352,8 @@ LinkedBlockingQueue 内部基于锁模式
 - 单一性，由于父加载器的类型对于子加载器是可见的，所以父加载器中加载过的类型，就不会在子加载器中重复加载。但是注意，类加载器"邻居"间，同一类型仍然可以被加载多次，因为互相并不可见。
 
 ### 内存划分
+
+![[../images/jmm-structure.png]]
 
 ![[../images/java-memory.png]]
 

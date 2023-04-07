@@ -1,7 +1,7 @@
 ---
 title: Instruction 2023
-created: 2022-08-28 00:00:00
-modified: 2023-03-27 09:57:46
+created: 2022-08-28 08:00:00
+modified: 2023-04-06 19:20:02
 tags: [Collection, Instruction]
 ---
 
@@ -42,7 +42,7 @@ Reset password with cli
 
 ## Memos
 
-`podman run -d --name memos -p 5230:5230 -v /iris/memos:/var/opt/memos docker.io/neosmemo/memos:latest`
+`podman run -d --name memos -p 127.0.0.1:5230:5230 -v /iris/memos:/var/opt/memos docker.io/neosmemo/memos:latest`
 
 ## Rust
 
@@ -60,6 +60,12 @@ Reset password with cli
 
 1. install extension `Format files`
 2. `Crtl+Shift+P` and select `Start to format`
+
+## Useful DNS Record
+
+```sh
+140.82.113.4 github.com
+```
 
 ## References
 
