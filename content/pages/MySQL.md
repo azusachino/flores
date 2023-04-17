@@ -1,11 +1,13 @@
 ---
 title: MySQL
-created: 2022-09-14 11:57:59
-modified: 2023-03-27 10:28:37
+created: 2022-09-14 19:57:59
+modified: 2023-04-17 09:50:31
 tags: [CS, DB]
 ---
 
 一款开源且流行的关系型数据库。
+
+![[../images/mysql-execution-order.png]]
 
 ## 优化相关知识点
 

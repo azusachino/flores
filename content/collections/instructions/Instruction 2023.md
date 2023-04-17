@@ -1,7 +1,7 @@
 ---
 title: Instruction 2023
-created: 2022-08-28 08:00:00
-modified: 2023-04-06 19:20:02
+created: 2022-08-28 16:00:00
+modified: 2023-04-09 15:58:24
 tags: [Collection, Instruction]
 ---
 
@@ -14,7 +14,7 @@ shutdown -s -t 3600
 shutdown -a
 ```
 
-## Java Pom
+## Maven
 
 通过 mvn 命令，统一修改整个项目的版本信息
 
@@ -28,6 +28,22 @@ find ./ -name pom.xml.versionsBackup | xargs rm
 
 ```sh
 mvn -f pom.xml dependency:tree
+```
+
+update deps version
+
+```sh
+# Displaying Available Updates (heavy operation, not recommend)
+mvn versions:display-dependency-updates
+
+# Converting SNAPSHOTs into RELEASEs
+mvn versions:use-releases
+
+# Updating to the Next RELEASE
+mvn versions:use-next-releases
+
+# Updating to the Latest RELEASE
+mvn versions:use-latest-releases
 ```
 
 ## SwitchyOmega
@@ -64,8 +80,55 @@ Reset password with cli
 ## Useful DNS Record
 
 ```sh
-140.82.113.4 github.com
+140.82.113.4    github.com
+185.199.111.133 githubusercontent.com
 ```
+
+## NVIM
+
+```sh
+winget install Neovim.Neovim
+
+brew install neovim
+yum install neovim
+```
+
+## Git Useful
+
+```sh
+# switch default editor
+git config --global core.editor "vim"
+```
+
+### ZSH
+
+install `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+```sh
+# useful plugins
+plugins=(
+git
+history-substring-search
+zsh-autosuggestions
+zsh-syntax-highlighting
+)
+```
+
+- install `zsh-autosuggestions`: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+- install zsh-syntax-highlighting, [repo](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+  - mac: `brew install zsh-syntax-highlighting`
+  - [centos](https://software.opensuse.org/download.html?project=shells%3Azsh-users%3Azsh-syntax-highlighting&package=zsh-syntax-highlighting)
+    - `cd /etc/yum.repos.d/`
+    - `wget https://download.opensuse.org/repositories/shells:zsh-users:zsh-syntax-highlighting/CentOS_7/shells:zsh-users:zsh-syntax-highlighting.repo`
+    - `yum install zsh-syntax-highlighting`
+  - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
+  - `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
+
+## YUM
+
+### Yum install local
+
+`yum localinstall *.rpm`
 
 ## References
 

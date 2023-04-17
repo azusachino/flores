@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/reading/columns/Java核心技术面试精讲.md",
-                "mode": "source",
+                "file": "content/pages/MySQL.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/reading/columns/Java核心技术面试精讲.md",
+                "file": "content/pages/MySQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/reading/columns/Java核心技术面试精讲.md",
+                "file": "content/pages/MySQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/reading/columns/Java核心技术面试精讲.md"
+                "file": "content/pages/MySQL.md"
               }
             }
           },
@@ -161,22 +161,27 @@
   },
   "active": "ed90633bfbb02ef0",
   "lastOpenFiles": [
-    "content/images/jvm-memory-structure.png",
-    "content/images/java-thread-state-circle.png",
+    "content/images/mysql-execution-order.png",
+    "content/pages/TCP.md",
+    "content/images/tcp-related-questions.png",
+    "content/pages/Network.md",
+    "content/images/http-versions.png",
+    "content/images/network-package-components.png",
     "content/pages/Java.md",
-    "content/collections/instructions/Instruction 2023.sync-conflict-20230406-181407-5ZIDCG6.md",
-    "content/images/tree-level-terminology.png",
-    "content/images/tcp-package.png",
-    "content/images/tcp-disconnection-handshake.png",
-    "content/images/tcp-connection-handshake.png",
-    "content/images/udp-package.png",
-    "content/images/jmm-structure.png",
+    "content/images/jvm-gc-logic.png",
+    "content/collections/experiences/interview.md",
+    "content/collections/leetcode.md",
+    "content/collections/alg.md",
+    "content/images/network-tcp-udp-flow-control.png",
+    "content/images/network-tcp-udp-reliable.png",
+    "content/images/network-tcp-udp-congestion-control.png",
+    "content/images/network-tcp-udp-cast.png",
+    "content/images/network-tcp-udp-header.png",
+    "content/images/network-tcp-udp-handshake.png",
     "content/reading/columns/数据结构与算法之美.md",
-    "content/images/sort-algorithms.png",
-    "content/reading/columns/趣谈网络协议.md",
-    "content/images/mac-ip-structure.png",
-    "content/images/ping-route.png",
     "content/reading/columns/Java核心技术面试精讲.md",
+    "content/collections/instructions/Instruction 2023.sync-conflict-20230406-181407-5ZIDCG6.md",
+    "content/reading/columns/趣谈网络协议.md",
     "content/topics/Columns.md",
     "content/pages/Cache.md",
     "content/pages/观星.md",
@@ -192,12 +197,7 @@
     "content/_index.md",
     "content/reading/articles/The Ultimate Guide to Writing Online.md",
     "content/writting/How To Write.md",
-    "content/writting/为什么说所有的二元论都可以放置在光谱之上.md",
-    "content/collections/instructions/Instruction 2022.md",
     ",markdownlint.json",
-    "content/collections/instructions/Instruction 2023.md",
-    "content/reading/columns/Java并发编程实战.md",
-    "content/reading/columns/Go语言第一课.md",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
     "resources/_gen/assets/scss/styles/_light_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",

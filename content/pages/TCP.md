@@ -1,7 +1,7 @@
 ---
 title: TCP
-created: 2022-08-30 21:23:51
-modified: 2023-03-27 10:29:32
+created: 2022-08-31 05:23:51
+modified: 2023-04-15 14:23:04
 aliases: [Transmission Control Protocol]
 tags: [CS, Network, Protocol]
 ---
@@ -38,6 +38,10 @@ SYN + ACK 保证被拆分的数据包，最终在接收端可以被拼接成完�
 ### The routes of a packet
 
 ![[../images/route-of-a-packet.png]]
+
+## Questions
+
+![[../images/tcp-related-questions.png]]
 
 ## References
 

@@ -1,7 +1,7 @@
 ---
 title: Rust-lang
-created: 2022-08-27 16:00:00
-modified: 2023-03-27 10:29:12
+created: 2022-08-28 00:00:00
+modified: 2023-04-17 11:49:08
 tags: [CS, ProgrammingLanguage]
 ---
 
@@ -306,8 +306,45 @@ which contains the captured variables.
 
 ![[../images/rust-closure.png]]
 
+## Cargo
+
+### Cross Compilation
+
+1. install aarch64 toolchain, say, the [linaro](https://releases.linaro.org/components/toolchain/binaries/latest-7/aarch64-linux-gnu/)
+2. set aarch64 toolchain to `PATH`
+3. setup the global config for cargo
+
+```toml
+# the ~/.cargo/config.toml
+
+[source.crates-io]
+replace-with = 'rsproxy'
+
+[source.rsproxy]
+registry = "https://rsproxy.cn/crates.io-index"
+
+[registries.rsproxy]
+index = "https://rsproxy.cn/crates.io-index"
+
+[net]
+git-fetch-with-cli = true
+
+[target.aarch64-unknown-linux-gnu]
+linker = "aarch64-linux-gnu-gcc"
+```
+
+```sh
+1. install the target `rustup target add aarch64-unknown-linux-gnu`
+2. build with target `cargo build -r --target aarch64-unknown-linux-gnu`
+```
+
+**Solve the open-sys problem**
+
+Use the vendored version `open-sys = { version = "0.10", features = ["vendored"] }`
+
 ## References
 
 - Rust 编程第一课 - 极客时间
 - [rust official site](https://www.rust-lang.org/)
 - [little rust](https://github.com/azusachino/little-rust)
+- [Notes on cross-compiling Rust](https://john-millikin.com/notes-on-cross-compiling-rust)

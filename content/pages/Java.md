@@ -1,7 +1,7 @@
 ---
 title: Java
-created: 2022-09-08 11:17:43
-modified: 2023-04-05 22:22:34
+created: 2022-09-08 19:17:43
+modified: 2023-04-11 20:09:14
 tags: [CS, ProgrammingLanguage]
 ---
 
@@ -413,6 +413,21 @@ Three Components:
 - JDK 11 版本下日志相关的参数`-XX:+PrintGCDetails`、`-XX:+PrintGCDateStamps`、`-Xloggc:$LOG_PATH/gc.log`参数已废弃，请使用参数`-Xlog:gc:$LOG_PATH/gc.log`代替。
 - 如果您没有将/home/admin/nas 容器路径挂载到 NAS 目录，则必须保证该目录在应用启动前已存在，否则将不会产生日志文件。
 
+### GC
+
+![[../images/jvm-gc-logic.png]]
+
+## DOC REF
+
+### Synchronization Order
+
+- 对于监视器 m 的解锁与所有后续操作对于 m 的加锁同步
+- 对 volatile 变量 v 的写入，与所有其他线程后续对 v 的读同步
+- 启动线程的操作与线程中的第一个操作同步。
+- 对于每个属性写入默认值（0， false，null）与每个线程对其进行的操作同步。
+- 线程 T1 的最后操作与线程 T2 发现线程 T1 已经结束同步。线程 T2 可以通过 T1.isAlive() 或 T1.join() 方法来判断 T1 是否已经终结。
+- 如果线程 T1 中断了 T2，那么线程 T1 的中断操作与其他所有线程发现 T2 被中断了同步（通过抛出 InterruptedException 异常，或者调用 Thread.interrupted 或 Thread.isInterrupted ）
+
 ## Bugs
 
 ### 无法 parse `yyyyMMddHHmmssSSS`
@@ -433,3 +448,5 @@ LocalDateTime t1 = LocalDateTime.parse(x, dtf);
 
 - [容器环境 JVM 内存配置最佳实践](https://mp.weixin.qq.com/s/aEDg4LzWUuT7exm1R6NJtQ)
 - [DateTimeFormatter won't parse dates with custom format "yyyyMMddHHmmssSSS"](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8031085)
+- [Synchronization Order](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4.4)
+- [](https://javadoop.com/post/Threads-And-Locks-md#17.5.%20final%20%E5%B1%9E%E6%80%A7%E7%9A%84%E8%AF%AD%E4%B9%89%EF%BC%88final%20Field%20Semantics%EF%BC%89)
