@@ -3,7 +3,7 @@ title: System Design Interview, An Insider's Guide
 created: 2023-01-08 01:34:23
 modified: 2023-03-26 11:19:48
 started: 2023-02-13
-finished: 2023-03-31
+finished: 2023-04-30
 read: 1
 total: 16
 author: [Alex Xu]

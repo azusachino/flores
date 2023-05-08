@@ -1,9 +1,11 @@
 ---
 title: 工作相关内容
-created: 2022-08-23 00:00:00
-modified: 2023-03-27 10:23:31
+created: 2022-08-23 08:00:00
+modified: 2023-04-09 23:37:00
 tags: [Collection, Work]
 ---
+
+- [paypay](https://www.tokyodev.com/companies/paypay/jobs/back-end-engineer/)
 
 ## [日本肉翻 会英语即可]移动支付公司 PayPay ペイペイ各种职位内推
 

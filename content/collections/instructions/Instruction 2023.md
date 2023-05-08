@@ -1,7 +1,7 @@
 ---
 title: Instruction 2023
-created: 2022-08-28 00:00:00
-modified: 2023-03-27 09:57:46
+created: 2022-08-28 16:00:00
+modified: 2023-04-09 15:58:24
 tags: [Collection, Instruction]
 ---
 
@@ -14,7 +14,7 @@ shutdown -s -t 3600
 shutdown -a
 ```
 
-## Java Pom
+## Maven
 
 通过 mvn 命令，统一修改整个项目的版本信息
 
@@ -30,6 +30,22 @@ find ./ -name pom.xml.versionsBackup | xargs rm
 mvn -f pom.xml dependency:tree
 ```
 
+update deps version
+
+```sh
+# Displaying Available Updates (heavy operation, not recommend)
+mvn versions:display-dependency-updates
+
+# Converting SNAPSHOTs into RELEASEs
+mvn versions:use-releases
+
+# Updating to the Next RELEASE
+mvn versions:use-next-releases
+
+# Updating to the Latest RELEASE
+mvn versions:use-latest-releases
+```
+
 ## SwitchyOmega
 
 using auto proxy mode, set to `https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt`
@@ -42,7 +58,7 @@ Reset password with cli
 
 ## Memos
 
-`podman run -d --name memos -p 5230:5230 -v /iris/memos:/var/opt/memos docker.io/neosmemo/memos:latest`
+`podman run -d --name memos -p 127.0.0.1:5230:5230 -v /iris/memos:/var/opt/memos docker.io/neosmemo/memos:latest`
 
 ## Rust
 
@@ -60,6 +76,144 @@ Reset password with cli
 
 1. install extension `Format files`
 2. `Crtl+Shift+P` and select `Start to format`
+
+## Useful DNS Record
+
+```sh
+140.82.113.4    github.com
+185.199.111.133 githubusercontent.com
+```
+
+## NVIM
+
+```sh
+winget install Neovim.Neovim
+
+brew install neovim
+yum install neovim
+```
+
+### With Plugins
+
+```sh
+/root/.config/nvim
+├── init.lua
+├── lua
+│   └── plugins.lua
+└── plugin # compiled stuffs
+    └── packer_compiled.lua
+```
+
+1. add `require("plugins")` to `init.lua`
+2. install `packer.vim` for plugin managements
+   1. a `git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+   2. add custom plugins configuration to `plugins.lua`
+3. run nvim & `:PackerSync`
+
+```lua
+-- init.lua
+requre("plugins")
+
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+
+-- empty setup using defaults
+require("nvim-tree").setup()
+
+-- OR setup with some options
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
+})
+```
+
+```lua
+-- plugins.lua
+
+return require('packer').startup(function()
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end
+  }
+end)
+```
+
+## Git Useful
+
+```sh
+# switch default editor
+git config --global core.editor "vim"
+```
+
+### ZSH
+
+install `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+```sh
+# useful plugins
+plugins=(
+git
+history-substring-search
+zsh-autosuggestions
+zsh-syntax-highlighting
+)
+```
+
+- install `zsh-autosuggestions`: `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+- install zsh-syntax-highlighting, [repo](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+  - mac: `brew install zsh-syntax-highlighting`
+  - [centos](https://software.opensuse.org/download.html?project=shells%3Azsh-users%3Azsh-syntax-highlighting&package=zsh-syntax-highlighting)
+    - `cd /etc/yum.repos.d/`
+    - `wget https://download.opensuse.org/repositories/shells:zsh-users:zsh-syntax-highlighting/CentOS_7/shells:zsh-users:zsh-syntax-highlighting.repo`
+    - `yum install zsh-syntax-highlighting`
+  - `git clone https://github.com/zsh-users/zsh-syntax-highlighting`
+  - `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
+
+## YUM
+
+### Yum install local
+
+`yum localinstall *.rpm`
+
+## HomeBrew
+
+### Tuna
+
+ref: `https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/`
+
+```sh
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_PIP_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
+```
+
+update local homebrew config
+
+```sh
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+for tap in core cask{,-fonts,-drivers,-versions} command-not-found services; do
+    brew tap --custom-remote --force-auto-update "homebrew/${tap}" "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-${tap}.git"
+done
+```
 
 ## References
 
