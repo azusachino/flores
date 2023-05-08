@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/pages/MySQL.md",
-                "mode": "preview",
+                "file": "content/pages/Java.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": true
               }
@@ -65,6 +65,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "7f008f1dbe80e996",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ],
         "currentTab": 2
@@ -87,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/pages/MySQL.md",
+                "file": "content/pages/Java.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/pages/MySQL.md",
+                "file": "content/pages/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/pages/MySQL.md"
+                "file": "content/pages/Java.md"
               }
             }
           },
@@ -161,6 +169,16 @@
   },
   "active": "ed90633bfbb02ef0",
   "lastOpenFiles": [
+    "content/images/java-gc-params.png",
+    "content/pages/Netty.md",
+    "content/images/netty-workloop.png",
+    "content/images/netty-framework.png",
+    "content/pages/System Design.md",
+    "content/images/system-design-brief-view.png",
+    "content/images/Pasted image 20230423071407.png",
+    "content/pages/MySQL.md",
+    "content/images/mysql-log-questions.png",
+    "content/images/mysql-index-questions.png",
     "content/images/mysql-execution-order.png",
     "content/pages/TCP.md",
     "content/images/tcp-related-questions.png",
@@ -168,16 +186,9 @@
     "content/images/http-versions.png",
     "content/images/network-package-components.png",
     "content/pages/Java.md",
-    "content/images/jvm-gc-logic.png",
     "content/collections/experiences/interview.md",
     "content/collections/leetcode.md",
     "content/collections/alg.md",
-    "content/images/network-tcp-udp-flow-control.png",
-    "content/images/network-tcp-udp-reliable.png",
-    "content/images/network-tcp-udp-congestion-control.png",
-    "content/images/network-tcp-udp-cast.png",
-    "content/images/network-tcp-udp-header.png",
-    "content/images/network-tcp-udp-handshake.png",
     "content/reading/columns/数据结构与算法之美.md",
     "content/reading/columns/Java核心技术面试精讲.md",
     "content/collections/instructions/Instruction 2023.sync-conflict-20230406-181407-5ZIDCG6.md",
@@ -194,9 +205,6 @@
     "content/pages/Abstract Queued Synchronizer.md",
     "content/reading/articles/Z世代定义与特征.md",
     "content/reading/columns/程序员的数学基础课.md",
-    "content/_index.md",
-    "content/reading/articles/The Ultimate Guide to Writing Online.md",
-    "content/writting/How To Write.md",
     ",markdownlint.json",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",

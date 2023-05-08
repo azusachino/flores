@@ -89,6 +89,17 @@ Go 规定表达式操作数中的所有函数、方法以及 channel 操作按�
 
 ![[../images/go-package-calling-order.png]]
 
+## Slice & Array
+
+```go
+// different length indicates different types of int array
+var a [4]int
+var b [5]int
+
+// slice
+ss := []string {"1", "2", "3"}
+```
+
 ## References
 
 - [Go Dev](https://go.dev/)

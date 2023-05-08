@@ -1,7 +1,7 @@
 ---
 title: Java
-created: 2022-09-08 19:17:43
-modified: 2023-04-11 20:09:14
+created: 2022-09-09 03:17:43
+modified: 2023-04-26 09:36:40
 tags: [CS, ProgrammingLanguage]
 ---
 
@@ -381,6 +381,8 @@ Three Components:
 
 ## 容器环境 JVM 调优
 
+dump: `jmap -dump:format=b,file=dump.hprof <pid>`
+
 ### 限制堆大小
 
 在容器环境下，Java 只能获取服务器的配置，无法感知容器内存限制。
@@ -417,6 +419,18 @@ Three Components:
 
 ![[../images/jvm-gc-logic.png]]
 
+GC Params
+
+![[../images/java-gc-params.png]]
+
+### Unsafe
+
+```java
+Field f = Unsafe.class.getDeclaredField("theUnsafe");
+f.setAccessible(true);
+Unsafe unsafe = (Unsafe) f.get(null);
+```
+
 ## DOC REF
 
 ### Synchronization Order
@@ -449,4 +463,4 @@ LocalDateTime t1 = LocalDateTime.parse(x, dtf);
 - [容器环境 JVM 内存配置最佳实践](https://mp.weixin.qq.com/s/aEDg4LzWUuT7exm1R6NJtQ)
 - [DateTimeFormatter won't parse dates with custom format "yyyyMMddHHmmssSSS"](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8031085)
 - [Synchronization Order](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4.4)
-- [](https://javadoop.com/post/Threads-And-Locks-md#17.5.%20final%20%E5%B1%9E%E6%80%A7%E7%9A%84%E8%AF%AD%E4%B9%89%EF%BC%88final%20Field%20Semantics%EF%BC%89)
+- [深入分析 java 8 编程语言规范：Threads and Locks](https://javadoop.com/post/Threads-And-Locks-md)

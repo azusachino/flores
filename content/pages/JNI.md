@@ -6,6 +6,8 @@ aliases: [Java Native Interface]
 tags: [CS, Java]
 ---
 
+尽可能复用 JNIEnv 和对象。
+
 ### JVM On Load
 
 ```cpp
@@ -43,27 +45,27 @@ static int registerNativeMethods(JNIEnv *env, const char *className, JNINativeMe
 
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *jvm, void* reserved) {
 
-std::cout << "jvm OnLoad" << std::endl;
+  std::cout << "jvm OnLoad" << std::endl;
 
-jvm_global_ = jvm;
+  jvm_global_ = jvm;
 
-// Real Jni Operation Instance
-JNIEnv *jni_env = nullptr;
-// Get current JniEnv pointer
-jint r = jvm_global_->GetEnv(reinterpret_cast<void **>(&jni_env), JNI_VERSION_1_8);
-// if fail, return
-if (r == JNI_FALSE) {
-  std::cerr << "fail to get env" << std::endl;
-  return JNI_FALSE;
-}
+  // Real Jni Operation Instance
+  JNIEnv *jni_env = nullptr;
+  // Get current JniEnv pointer
+  jint r = jvm_global_->GetEnv(reinterpret_cast<void **>(&jni_env), JNI_VERSION_1_8);
+  // if fail, return
+  if (r == JNI_FALSE) {
+    std::cerr << "fail to get env" << std::endl;
+    return JNI_FALSE;
+  }
 
-// register native methods
-jint ret = registerNativeMethods(jni_env, jni_clazz_impl_, jni_methods_, sizeof(jni_methods_) / sizeof(jni_methods_[0]));
-if (JNI_TRUE == ret)
-  std::cout << "native methods registered" << std::endl;
+  // register native methods
+  jint ret = registerNativeMethods(jni_env, jni_clazz_impl_, jni_methods_, sizeof(jni_methods_) / sizeof(jni_methods_[0]));
+  if (JNI_TRUE == ret)
+    std::cout << "native methods registered" << std::endl;
 
-// must return valid JNI Version
-return JNI_VERSION_1_8;
+  // must return valid JNI Version
+  return JNI_VERSION_1_8;
 }
 ```
 
@@ -83,15 +85,15 @@ JNIEXPORT jint JNICALL OnUnload(JavaVM *vm, void *reserved)
 extern JavaVM *jvm_global_;
 
 int32_t attach_t(JNIEnv **jni_env) {
-if (jvm_global_->getEnv(reinterpret<void**>(jni_env), JNI_VERSION_1_8) < 0) {
-  if (jvm_global_->AttachCurrentThread(reinterpret<void**>(jni_env), nullptr) < 0) {
-    *jni_env = nullptr;
-    return -1;
-  } else {
-    return 0;
+  if (jvm_global_->getEnv(reinterpret<void**>(jni_env), JNI_VERSION_1_8) < 0) {
+    if (jvm_global_->AttachCurrentThread(reinterpret<void**>(jni_env), nullptr) < 0) {
+      *jni_env = nullptr;
+      return -1;
+    } else {
+      return 0;
+    }
   }
-}
-return -1;
+  return -1;
 }
 ```
 
@@ -112,20 +114,20 @@ extern "C" JNIEXPORT void JNICALL jni_native_say(JNIEnv *, jobject)
 
 ```cpp
 void DemoCallback::onLog(const char* log) {
-JNIEnv *jni_env;
-attach_t(&jni_env);
-if (jni_env == nullptr) {
-  perror("fail to attach env");
-  return;
-}
-jclass j_cls = jni_env->FindClass("com/some/som/Clazz");
-jstring j_log = jni_env->newStringUTF(log);
-jmethod j_method = jni_env->GetMethodID(j_cls, "onLog", "(Ljava/lang/String;)V");
+  JNIEnv *jni_env;
+  attach_t(&jni_env);
+  if (jni_env == nullptr) {
+    perror("fail to attach env");
+    return;
+  }
+  jclass j_cls = jni_env->FindClass("com/some/som/Clazz");
+  jstring j_log = jni_env->newStringUTF(log);
+  jmethod j_method = jni_env->GetMethodID(j_cls, "onLog", "(Ljava/lang/String;)V");
 
-// saved jobject reference
-jni_env->CallVoidMethod(this->j_obj, j_method, log);
+  // saved jobject reference
+  jni_env->CallVoidMethod(this->j_obj, j_method, log);
 
-jni_env->DeleteLocalRef(j_log);
+  jni_env->DeleteLocalRef(j_log);
 }
 ```
 
@@ -164,3 +166,4 @@ jni_env->DeleteLocalRef(j_log);
 - [How to set java library path](https://blog.csdn.net/codepython/article/details/42718003)
 - [Google JNI Tips](https://developer.android.com/training/articles/perf-jni)
 - [JNI 为什么要调用 AttachCurrentThread？](https://keeplooking.top/2020/05/19/Android/AttachCurrentThread)
+- [JNI Spec](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/invocation.html)

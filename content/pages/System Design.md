@@ -41,7 +41,11 @@ Learn how to design systems at scale and prepare for system design interviews.
   - Automation - CI, CD
   - i18n
   - CDN
-  - RPC
+  - RP![[../images/Pasted image 20230423071407.png]]![[../images/Pasted image 20230423071407.png]]C
+
+## Brief View
+
+![[../images/system-design-brief-view.png]]
 
 ## Designs
 

@@ -93,6 +93,67 @@ brew install neovim
 yum install neovim
 ```
 
+### With Plugins
+
+```sh
+/root/.config/nvim
+├── init.lua
+├── lua
+│   └── plugins.lua
+└── plugin # compiled stuffs
+    └── packer_compiled.lua
+```
+
+1. add `require("plugins")` to `init.lua`
+2. install `packer.vim` for plugin managements
+   1. a `git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+   2. add custom plugins configuration to `plugins.lua`
+3. run nvim & `:PackerSync`
+
+```lua
+-- init.lua
+requre("plugins")
+
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+
+-- empty setup using defaults
+require("nvim-tree").setup()
+
+-- OR setup with some options
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
+})
+```
+
+```lua
+-- plugins.lua
+
+return require('packer').startup(function()
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end
+  }
+end)
+```
+
 ## Git Useful
 
 ```sh
@@ -121,7 +182,7 @@ zsh-syntax-highlighting
     - `cd /etc/yum.repos.d/`
     - `wget https://download.opensuse.org/repositories/shells:zsh-users:zsh-syntax-highlighting/CentOS_7/shells:zsh-users:zsh-syntax-highlighting.repo`
     - `yum install zsh-syntax-highlighting`
-  - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
+  - `git clone https://github.com/zsh-users/zsh-syntax-highlighting`
   - `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
 
 ## YUM
@@ -129,6 +190,30 @@ zsh-syntax-highlighting
 ### Yum install local
 
 `yum localinstall *.rpm`
+
+## HomeBrew
+
+### Tuna
+
+ref: `https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/`
+
+```sh
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_PIP_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
+```
+
+update local homebrew config
+
+```sh
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+for tap in core cask{,-fonts,-drivers,-versions} command-not-found services; do
+    brew tap --custom-remote --force-auto-update "homebrew/${tap}" "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-${tap}.git"
+done
+```
 
 ## References
 

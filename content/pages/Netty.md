@@ -1,11 +1,19 @@
 ---
 title: Netty
-created: 2022-12-16 19:56:43
-modified: 2023-03-26 11:19:47
+created: 2022-12-17 03:56:43
+modified: 2023-04-25 15:38:49
 tags: [CS, Java]
 ---
 
 A famous networking framework written in [[Java]] .
+
+![[../images/netty-workloop.png]]
+
+## Framework
+
+![[../images/netty-framework.png]]
+
+## Bootstrap
 
 ![[../images/netty-server-flowchart.png]]
 
@@ -34,3 +42,4 @@ ChannelInboundHandlerAdapter function executes order:
 ## References
 
 - [netty 之 ServerBootstrap的启动流程](https://blog.csdn.net/developer_/article/details/78394827)
+- [45 张图深度解析 Netty 架构与原理](https://cloud.tencent.com/developer/article/1754078)

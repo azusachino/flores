@@ -6,7 +6,6 @@ tags: [Collection, Work]
 ---
 
 - [paypay](https://www.tokyodev.com/companies/paypay/jobs/back-end-engineer/)
-- [mercari](https://www.tokyodev.com/companies/mercari/jobs/software-engineer-search-platform-development/)
 
 ## [日本肉翻 会英语即可]移动支付公司 PayPay ペイペイ各种职位内推
 
