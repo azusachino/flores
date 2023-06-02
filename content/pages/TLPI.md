@@ -1,7 +1,7 @@
 ---
 title: TLPI
-created: 2022-12-13 12:10:34
-modified: 2023-03-27 10:29:34
+created: 2022-12-13 20:10:34
+modified: 2023-05-15 18:52:52
 aliases: [The Linux Programming Interface]
 tags: [CS, Linux]
 ---
@@ -32,6 +32,8 @@ UNIX(AT&T) -> BSD(Berkeley), System V(AT&T)
 - Access to devices (mice, monitors, keyboards, disk and tape drives and so on)
 - Networking
 - Provision of a system call API
+
+## File I/O
 
 ## References
 

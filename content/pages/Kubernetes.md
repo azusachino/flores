@@ -8,7 +8,7 @@ tags: [CS, Microservices]
 
 Kubernetes is a software system for automating the deployment and management of complex, large-scale application systems composed of computer processes running in containers.
 
-> [!info] Kubernetes
+> [!info]
 > Kubernetes 被定义成一个用于自动化部署、扩容和管理容器应用的开源系统；它将一个分布式软件的一组容器打包成一个个更容易管理和发现的逻辑单元。
 
 ## 四大特征
@@ -33,7 +33,7 @@ Kubernetes is a software system for automating the deployment and management of 
 - Kube-Scheduler：集群资源调度，按照预定的调度策略将 Pod 调度到合适的 Node 节点上
 - (Cloud) Controller Manager：服务维护集群的状态，如程序部署安排、故障检测、自动扩展、滚动更新等
 - [[Etcd]]：存储集群中各种资源对象的信息
-- Node\*\*：集群的数据平面，为容器提供运行环境
+- Node：集群的数据平面，为容器提供运行环境
 - Kubelet：管理容器的生命周期，通过 docker-shim/containerd 组件来创建、更新、销毁容器
 - Kube-Proxy：提供集群内部的服务发现和负载均衡
 - [[Docker]] (或其他替代品): 容器相关操作
@@ -44,13 +44,13 @@ Kubernetes is a software system for automating the deployment and management of 
 
 **在 Kubernetes 环境启动之后，Master 节点和 Node 节点都会将自身的信息存储到 etcd**
 
-- 客户端提交 Pod 的配置信息（可以是 yaml 文件定义好的信息）到 kube-apiserver；
+- 客户端提交 Pod 的配置信息 (nginx-deployment.yaml) 到 kube-apiserver；
 - Apiserver 收到指令后，通知给 controller-manager 创建一个资源对象；
 - Controller-manager 通过 api-server 将 pod 的配置信息存储到 ETCD 数据中心中；
 - Kube-scheduler 检测到 pod 信息会开始调度预选，会先过滤掉不符合 Pod 资源配置要求的节点，然后开始调度调优，主要是挑选出更适合运行 pod 的节点，然后将 pod 的资源配置单发送到 node 节点上的 kubelet 组件上。
 - Kubelet 根据 scheduler 发来的资源配置单运行 pod，运行成功后，将 pod 的运行信息返回给 scheduler，scheduler 将返回的 pod 运行状况的信息存储到 etcd 数据中心。
 
-`Nginx-deployment.yml` 案例
+`nginx-deployment.yaml` 案例
 
 ```yaml
 apiVersion: apps/v1

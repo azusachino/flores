@@ -29,7 +29,37 @@ service KV {
 }
 ```
 
-## [[Raft]]
+### List/Watch
+
+```go
+cli, err := clientv3.New(clientv3.Config{
+    Endpoints:   []string{"127.0.0.1:2379"},
+    Context:     ctx,
+    DialTimeout: 3 * time.Second,
+    DialOptions: []grpc.DialOption{},
+})
+
+// handle error
+ch := cli.Watch(ctx, "/some/keyspace", clientv3.WithPrefix())
+for resp := range ch {
+    for _, event = range resp.Events {
+        switch event.Type {
+        case mvccpb.PUT:
+            // process with put event
+        case mvccpb.DELETE:
+            // process with delete event
+        }
+    }
+}
+```
+
+## Best Practices
+
+1. Use a fast and reliable network
+2. Use SSDs for storage
+3. Run etcd on dedicated machines
+4. Confugire etcd for high availability
+5. Monitor etcd closely
 
 ## References
 

@@ -14,6 +14,10 @@ tags: [CS, DB]
 
 表和索引的数据文件默认为1GB，当超过该阈值时系统会创建新的数据文件，并加上`.1`开始的后缀名，也就是所谓的数据段。
 
+## Cautions
+
+1. SQL 中无法使用双引号
+
 ## References
 
 - [深入浅出PostgreSQL - 微信读书](https://weread.qq.com/web/reader/86a3216071d2825c86a37e0kc20321001cc20ad4d76f5ae)

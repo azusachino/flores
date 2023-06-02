@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6b9a5047bee08400",
+        "id": "8c07acd0a667dccf",
         "type": "tabs",
         "children": [
           {
-            "id": "ed90633bfbb02ef0",
+            "id": "f069151c2e055261",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/pages/Java.md",
+                "file": "content/collections/misc/misc 2022.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -39,21 +39,13 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mega",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "168d9a27b64269a7",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
             }
           },
           {
@@ -67,7 +59,7 @@
             }
           },
           {
-            "id": "7f008f1dbe80e996",
+            "id": "3632111a88dca8f7",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -75,7 +67,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -95,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/pages/Java.md",
+                "file": "content/collections/misc/misc 2022.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/pages/Java.md",
+                "file": "content/collections/misc/misc 2022.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/pages/Java.md"
+                "file": "content/collections/misc/misc 2022.md"
               }
             }
           },
@@ -151,8 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5,
-    "collapsed": true
+    "width": 276.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,8 +158,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ed90633bfbb02ef0",
+  "active": "28655d894ad7ef7a",
   "lastOpenFiles": [
+    "content/interviews/Java Questions.md",
+    "content/collections/life_lessons/country_yard_child.md",
+    "content/collections/life_lessons/country_yard_boy.md",
+    "content/collections/life_lessons/country_boy.md",
+    "content/interviews/UUID.md",
+    "content/pages/Java.md",
+    "content/pages/JMM.md",
+    "content/pages/Java Development.md",
+    "content/pages/C.md",
+    "content/pages/ELK.md",
+    "content/pages/Dopamine.md",
+    "content/pages/Python.md",
+    "content/pages/Untitled.md",
+    "content/reading/books/程序员的思维修炼.md",
     "content/images/java-gc-params.png",
     "content/pages/Netty.md",
     "content/images/netty-workloop.png",
@@ -184,8 +189,6 @@
     "content/images/tcp-related-questions.png",
     "content/pages/Network.md",
     "content/images/http-versions.png",
-    "content/images/network-package-components.png",
-    "content/pages/Java.md",
     "content/collections/experiences/interview.md",
     "content/collections/leetcode.md",
     "content/collections/alg.md",
@@ -193,18 +196,6 @@
     "content/reading/columns/Java核心技术面试精讲.md",
     "content/collections/instructions/Instruction 2023.sync-conflict-20230406-181407-5ZIDCG6.md",
     "content/reading/columns/趣谈网络协议.md",
-    "content/topics/Columns.md",
-    "content/pages/Cache.md",
-    "content/pages/观星.md",
-    "content/pages/读书.md",
-    "content/pages/脑出血.md",
-    "content/pages/贫血.md",
-    "content/pages/露营.md",
-    "content/pages/音视频技术.md",
-    "content/pages/高血压.md",
-    "content/pages/Abstract Queued Synchronizer.md",
-    "content/reading/articles/Z世代定义与特征.md",
-    "content/reading/columns/程序员的数学基础课.md",
     ",markdownlint.json",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",
