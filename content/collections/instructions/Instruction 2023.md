@@ -1,7 +1,7 @@
 ---
 title: Instruction 2023
-created: 2022-08-28 16:00:00
-modified: 2023-04-09 15:58:24
+created: 2022-08-29 00:00:00
+modified: 2023-05-15 18:52:52
 tags: [Collection, Instruction]
 ---
 
@@ -161,6 +161,17 @@ end)
 git config --global core.editor "vim"
 ```
 
+configure proxy for specific host
+
+```sh
+Host github.com
+  HostName github.com
+  User azusachino
+  IdentityFile ~\.ssh\id_rsa_github
+  PreferredAuthentications publickey
+  ProxyCommand connect -S localhost:30808 %h %p
+```
+
 ### ZSH
 
 install `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
@@ -213,6 +224,14 @@ export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebr
 for tap in core cask{,-fonts,-drivers,-versions} command-not-found services; do
     brew tap --custom-remote --force-auto-update "homebrew/${tap}" "https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-${tap}.git"
 done
+```
+
+## Linux
+
+kill all my processes who is zombie.
+
+```sh
+ps -ef | grep ycpang | awk '{if($3==1) {print $2}}' | xargs kill -9
 ```
 
 ## References

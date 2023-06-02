@@ -1,9 +1,11 @@
 ---
-title: Java Preparasion
-created: 2023-01-06 08:00:00
-modified: 2023-04-07 22:00:18
-tags: [Java, Interview]
+title: UUID
+created: 2023-01-06 16:00:00
+modified: 2023-05-25 19:20:30
+tags: [CS, Interview]
 ---
+
+## Snowflake UUID Generator in Java
 
 ```java
 /**
@@ -112,4 +114,4 @@ public class SnowFlake {
 
 ## References
 
-- [](https://mp.weixin.qq.com/s/AQvDX0n8wBBaWl2OmcpnrA)
+- [敖丙8年经验读者，疫情期间面20家大厂总结](https://mp.weixin.qq.com/s/AQvDX0n8wBBaWl2OmcpnrA)

@@ -379,9 +379,16 @@ Three Components:
 - Channel (socket) open, bind, register, close
 - Selector (epoll) select, selectionKeys, SelectionKey.OP_XXX
 
-## 容器环境 JVM 调优
+## JVM
+
+### 生成 dump 文件
 
 dump: `jmap -dump:format=b,file=dump.hprof <pid>`
+
+### 调优标志
+
+- 布尔 `-XX:+FlagName 表示开启, -XX:-FlagName 表示关闭`
+- 附带参数 `-XX:FlagName=Something` -> `-XX:NewRatio=N`
 
 ### 限制堆大小
 
@@ -430,6 +437,17 @@ Field f = Unsafe.class.getDeclaredField("theUnsafe");
 f.setAccessible(true);
 Unsafe unsafe = (Unsafe) f.get(null);
 ```
+
+### JVM Monitor Tools
+
+- jcmd 打印进程中的基本类、线程和 JVM 信息
+  - `jcmd pid command optional_arguments`
+- jconsole 提供 JVM 活动的图形化视图，包括线程的使用、类的使用和 GC 情况
+- jmap JVM (堆)内存的 snapshot
+- jinfo 查看 JVM 系统属性 (System.properties)
+- jstack java 进程栈信息的 snapshot
+- jstat 提供 GC 和类加载的信息
+- jvisualvm 监控 JVM 的 GUI 工具
 
 ## DOC REF
 
