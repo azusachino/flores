@@ -1,7 +1,7 @@
 ---
 title: Instruction 2023
-created: 2022-08-29 00:00:00
-modified: 2023-05-15 18:52:52
+created: 2022-08-29 08:00:00
+modified: 2023-07-10 17:19:50
 tags: [Collection, Instruction]
 ---
 
@@ -174,7 +174,12 @@ Host github.com
 
 ### ZSH
 
-install `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+```sh
+# install zsh
+yum install zsh git
+# install ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 ```sh
 # useful plugins
@@ -234,6 +239,14 @@ kill all my processes who is zombie.
 ps -ef | grep ycpang | awk '{if($3==1) {print $2}}' | xargs kill -9
 ```
 
+## Nginx
+
+### PWA 应用 刷新 404 问题解决
+
+1. nginx location 添加 本地路由提示 `try_files $uri /index.html`
+2. 在 index.html 中添加 `<base href="/" />`，具体参考 ref
+
 ## References
 
 - [windows - 如何在 Windows 开发环境中使用 OpenSSL for Rust](https://www.coder.work/article/976641)
+- ["Uncaught SyntaxError: Unexpected token <" when refreshing page](https://github.com/vuejs-templates/pwa/issues/165)

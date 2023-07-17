@@ -1,10 +1,16 @@
 ---
 title: Interview
-created: 2022-08-21 16:00:00
-modified: 2023-03-27 10:25:59
+created: 2022-08-22 00:00:00
+modified: 2023-06-21 14:53:23
 aliases: [面试]
 tags: [Working]
 ---
+
+## self introduction
+
+1. 工作履历、教育背景、擅长的技术和业务
+2. 自己项目中的亮点
+3. 技术以外的内容，兴趣爱好等
 
 ## Algorithm Interview
 

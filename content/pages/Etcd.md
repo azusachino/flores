@@ -53,14 +53,9 @@ for resp := range ch {
 }
 ```
 
-## Best Practices
-
-1. Use a fast and reliable network
-2. Use SSDs for storage
-3. Run etcd on dedicated machines
-4. Confugire etcd for high availability
-5. Monitor etcd closely
+## Installation
 
 ## References
 
 - [高可用分布式存储 etcd 的实现原理](https://draveness.me/etcd-introduction/)
+- [etcd](https://etcd.io)

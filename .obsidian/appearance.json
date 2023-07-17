@@ -2,7 +2,7 @@
   "theme": "moonstone",
   "cssTheme": "Minimal",
   "translucency": false,
-  "baseFontSize": 13,
+  "baseFontSize": 15,
   "textFontFamily": "Microsoft YaHei",
   "accentColor": ""
 }

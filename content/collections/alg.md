@@ -1,8 +1,7 @@
 ---
 title: jargon
-created: 2022-09-18 08:00:00
-modified: 2023-04-09 22:42:38
-aliases: [专业术语, 黑话]
+created: 2022-09-19 00:00:00
+modified: 2023-07-14 23:57:37
 tags: [Collection]
 ---
 

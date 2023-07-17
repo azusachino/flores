@@ -1,7 +1,7 @@
 ---
 title: Java Development
-created: 2022-09-30 02:58:09
-modified: 2023-05-25 18:59:46
+created: 2022-09-30 18:58:09
+modified: 2023-06-19 10:11:10
 tags: [CS, Java]
 ---
 
@@ -21,7 +21,7 @@ G1GC (Garbage First Garbage Collector) is a garbage collector introduced in JDK 
 
 ### ZGC
 
-ZGC is a garbage collector introduced in JDK 11 that is designed to perform low-lantency garbage collection in large heaps. It is a concurrent garbage collector, which means it can perform garbage collection while the [[Java]] application is still running (not at the safe point), reducing the need for long pauses or stop-the-world events.
+ZGC is a garbage collector introduced in JDK 11 that is designed to perform low-latency garbage collection in large heaps. It is a concurrent garbage collector, which means it can perform garbage collection while the [[Java]] application is still running (not at the safe point), reducing the need for long pauses or stop-the-world events.
 
 1. Initialization (STW)
    1. The ZGC process begins with the initialization phase, where the JVM sets up the heap and initializes the ZGC threads. The heap is divided into regions, and each region is assigned to a ZGC thread for concurrent garbage collection.
@@ -30,7 +30,7 @@ ZGC is a garbage collector introduced in JDK 11 that is designed to perform low-
 3. Root scanning
    1. After the concurrent marking phase is complete, the ZGC threads perform root scanning to identify any objects that were missed during the marking phase. Root scanning involves scanning the stacks of all application threads, as well as other root objects such as static variables and JNI handles.
 4. Concurrent evacuation
-   1. The next phase is the concurrent evacuation phase, where the ZGC threads relocate live objects to new regions in the heap. This is done concurrently with the application threads, so the application can continue running whilethe garbage collection is in progress. The live objects are moved in small batches, with each batch moved from the source region to the destination region using a hardware-based memory copy.
+   1. The next phase is the concurrent evacuation phase, where the ZGC threads relocate live objects to new regions in the heap. This is done concurrently with the application threads, so the application can continue running while the garbage collection is in progress. The live objects are moved in small batches, with each batch moved from the source region to the destination region using a hardware-based memory copy.
 5. Concurrent reference processing
    1. Concurrent reference processing: After the concurrent evacuation phase is complete, the ZGC threads perform concurrent reference processing to update any object references that were changed during the evacuation phase. This involves scanning reference queues and updating object references to point to their new locations in the heap.
 6. Finalization and unload (STW)

@@ -1,7 +1,7 @@
 ---
 title: MySQL
-created: 2022-09-15 03:57:59
-modified: 2023-04-17 23:43:31
+created: 2022-09-15 11:57:59
+modified: 2023-06-12 16:03:21
 tags: [CS, DB]
 ---
 
@@ -218,8 +218,151 @@ count(*) = count(1) > count(pk) > count(row)
    2. commit 阶段：将 binlog 刷新到磁盘，接着调用引擎的提交事务接口，将 redo log 状态设置为 commit（将事务设置为 commit 状态后，刷入到磁盘 redo log 文件）；
 8. 至此，一条更新语句执行完成。
 
+## Interview Questions
+
+### int(10) char(10)
+
+- int(10) 是显示数据的长度
+- char(10) 是存储数据的长度
+
+### truncate, delete
+
+<table><tbody>
+<tr>
+<td>
+<h3>DELETE</h3>
+</td>
+<td></td>
+<td>
+<h3>TRUNCATE</h3>
+</td>
+</tr>
+<tr>
+<td>
+<p>The DELETE command is used to delete particular records from a table.</p>
+</td>
+<td>
+<p>Definition</p>
+</td>
+<td>
+<p>The TRUNCATE command is used to delete the complete data from the table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>It is a DML command.</p>
+</td>
+<td>
+<p>Language Type</p>
+</td>
+<td>
+<p>It is a DDL command</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The DELETE command acquires the lock on every deleting record; thus, it requires more locks and resources.</p>
+</td>
+<td>
+<p>Locks and Resources</p>
+</td>
+<td>
+<p>The TRUNCATE command requires fewer locks and resources before deleting the data page because it acquires the lock on the data page</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>It works with the WHERE clause.</p>
+</td>
+<td>
+<p>WHERE Clause</p>
+</td>
+<td>
+<p>It does not work with the WHERE clause.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>DELETE operation operates on data records and executes deletion one-by-one on records in the order of the queries processed</p>
+</td>
+<td>
+<p>Working</p>
+</td>
+<td>
+<p>TRUNCATE operates on data pages and executes deletion of the whole table data at a time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Its speed is slow as it makes operations in rows and records it in transaction logs</p>
+</td>
+<td>
+<p>Speed</p>
+</td>
+<td>
+<p>Its speed is fast as it only records data pages in transaction logs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>It records all the deleted data rows in the transaction log.</p>
+</td>
+<td>
+<p>Transaction Log</p>
+</td>
+<td>
+<p>It records only the deleted data pages in the transaction log.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>You can restore the data using the COMMIT or ROLLBACK command.</p>
+</td>
+<td>
+<p>Rollback</p>
+</td>
+<td>
+<p>You cannot restore the deleted data after executing this command.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>The DELETE statement deletes the records and does not interfere with the table's identity.</p>
+</td>
+<td>
+<p>Table Identity</p>
+</td>
+<td>
+<p>The TRUNCATE statement does not delete the table structure but resets the identity of the table</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>It works with an indexed view.</p>
+</td>
+<td>
+<p>Indexed View</p>
+</td>
+<td>
+<p>It does not work with indexed views.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>It activates the triggers on the table and causes them to fire</p>
+</td>
+<td>
+<p>Triggers</p>
+</td>
+<td>
+<p>It does not activate the triggers applied on the table.</p>
+</td>
+</tr>
+</tbody></table>
+
 ## References
 
 - [1.8w 字的 SQL 优化大全](https://mp.weixin.qq.com/s/SklaldVyLMEwa-q_F9jRSg)
 - [21 个 MySQL 表设计的经验准则](https://mp.weixin.qq.com/s/sSsZ-w6WzjA_DLZfnsxD2w)
 - [执行一条 select 语句，期间发生了什么？](https://xiaolincoding.com/mysql/base/how_select.html)
+- [MySQL 规约（转自阿里巴巴 Java 开发手册）](https://learnku.com/laravel/t/45456)

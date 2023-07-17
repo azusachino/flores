@@ -1,7 +1,7 @@
 ---
 title: Kubernetes
-created: 2022-08-30 08:00:00
-modified: 2023-03-27 10:28:09
+created: 2022-08-30 16:00:00
+modified: 2023-07-10 15:15:49
 aliases: [k8s]
 tags: [CS, Microservices]
 ---
@@ -10,6 +10,10 @@ Kubernetes is a software system for automating the deployment and management of 
 
 > [!info]
 > Kubernetes 被定义成一个用于自动化部署、扩容和管理容器应用的开源系统；它将一个分布式软件的一组容器打包成一个个更容易管理和发现的逻辑单元。
+
+## Kubernetes Periodic Table
+
+![[../images/kubernetes-periodic-table.png]]
 
 ## 四大特征
 
