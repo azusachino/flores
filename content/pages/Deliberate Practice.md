@@ -1,7 +1,7 @@
 ---
 title: Deliberate Practice
-created: 2023-01-17 17:27:06
-modified: 2023-01-17 17:27:06
+created: 2023-01-18 01:27:06
+modified: 2023-06-27 14:49:10
 aliases: [刻意练习]
 tags: [Model, LifeStyle]
 ---
@@ -17,4 +17,4 @@ tags: [Model, LifeStyle]
 
 ## References
 
-- [](https://www.njlifehacks.com/deliberate-practice)
+- [deliberate practice](https://www.njlifehacks.com/deliberate-practice)

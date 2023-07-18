@@ -1,12 +1,12 @@
 ---
 title: MySQL实战
-created: 2023-02-05 01:34:23
-modified: 2023-03-27 10:35:29
+created: 2023-02-05 17:34:23
+modified: 2023-07-07 13:48:49
 tags: [Column, MySQL]
 author: 林晓斌
 read: 30
 total: 45
-status: 暂停
+status: halt
 ---
 
 **如果内存够，就要多利用内存，尽量减少磁盘访问。**

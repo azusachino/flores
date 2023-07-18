@@ -1,11 +1,12 @@
 ---
 title: Kubernetes入门实战课
-created: 2023-01-08 16:00:00
-modified: 2023-03-27 10:34:35
+created: 2023-01-09 00:00:00
+modified: 2023-07-07 13:49:06
 tags: [Column, Tech, Kubernetes]
 author: 罗剑锋
 read: 28
 total: 28
+status: done
 ---
 
 容器就是被隔离的进程。容器共享了宿主机的内核。

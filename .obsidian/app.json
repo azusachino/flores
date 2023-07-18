@@ -11,5 +11,6 @@
   "spellcheck": true,
   "useTab": false,
   "promptDelete": false,
-  "newLinkFormat": "relative"
+  "newLinkFormat": "relative",
+  "autoConvertHtml": false
 }

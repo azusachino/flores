@@ -43,6 +43,15 @@ SYN + ACK 保证被拆分的数据包，最终在接收端可以被拼接成完�
 
 ![[../images/tcp-related-questions.png]]
 
+## Commands
+
+```sh
+# i - interface
+# port - port number
+# w - write to file
+tcpdump -i any port 8080 -w tcpdump.pcap
+```
+
 ## References
 
 - [如何使用 Wireshark 分析 TCP 吞吐瓶颈](https://mp.weixin.qq.com/s/KXPF-9f_VYRnEgIe22bxkQ)

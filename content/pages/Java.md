@@ -424,6 +424,8 @@ dump: `jmap -dump:format=b,file=dump.hprof <pid>`
 
 ### GC
 
+**Stop the World Event** - All minor garbage collections are "Stop the World" events. This means that all application threads are stopped until the operation completes. Minor garbage collections are always Stop the World events.
+
 ![[../images/jvm-gc-logic.png]]
 
 GC Params
@@ -476,9 +478,31 @@ LocalDateTime t1 = LocalDateTime.parse(x, dtf);
 
 `DateTimeFormatter dtf = new DateTimeFormatterBuilder().appendPattern("yyyyMMddHHmmss").appendValue(ChronoField.MILLI_OF_SECOND, 3).toFormatter()`
 
+## MISC
+
+### Java9
+
+Java9 模块化后，不允许应用程序查看来自 JDK 的所有类，会影响部分反射的运行，需要通过以下命令解决
+
+```sh
+--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+```
+
+### Import
+
+`import package.sub.*` is type-import-on-demand-declaration, which never causes other declaration to be shadowed.
+
+### ThreadPoolExecutor & ForkJoinPool
+
+ThreadPoolExecutor is a general-purpose thread pool implementation that is suitable for executing task that are independent of each other. It is designed to manage a fixed number of threads and a queue of tasks, and it can be configured with various parameters to control the behavior of the pool. `ThreadPoolExecutor` is a good choice for applications that need to execute a large number of short-lived tasks, such as web servers or batch processing systems.
+
+ForkJoinPool, is designed specifically for executing recursive divide-and-conquer algorithms, where each task can be split into smaller subtasks that can be executed independently. ForkJoinPool is optimized for work-stealing, which means that idle threads can steal tasks from other threads' queue, which can improve performance in certain scenarios. ForkJoinPool is a good choice for applications that need to execute recursive algorithms, such as sorting or searching large dataset.
+
 ## References
 
 - [容器环境 JVM 内存配置最佳实践](https://mp.weixin.qq.com/s/aEDg4LzWUuT7exm1R6NJtQ)
 - [DateTimeFormatter won't parse dates with custom format "yyyyMMddHHmmssSSS"](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8031085)
 - [Synchronization Order](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4.4)
 - [深入分析 java 8 编程语言规范：Threads and Locks](https://javadoop.com/post/Threads-And-Locks-md)
+- [GC Basics](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
+- [一文看懂 jdk8 中的 ConcurrentHashMap](https://juejin.cn/post/6896387191828643847)

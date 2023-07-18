@@ -100,3 +100,4 @@ Another One:
 - [System Design Primer - github](https://github.com/donnemartin/system-design-primer)
 - [EP18: Build a chat application](https://blog.bytebytego.com/p/ep18-build-a-chat-application-also)
 - [EP24: Environment-friendly languages](https://blog.bytebytego.com/p/ep24-environment-friendly-languages)
+- [系统设计面试题精选](https://soulmachine.gitbooks.io/system-design/content/cn/)

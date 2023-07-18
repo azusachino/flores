@@ -30,3 +30,4 @@ tags: [Collection]
 ## References
 
 - [自我介绍类型 Behavioral-based interviewing Competency-Based Interviewing](https://chenyilong.notion.site/Behavioral-based-interviewing-Competency-Based-Interviewing-a728c50a5ba244188e1c66e28d34dd1c)
+- [彻底击碎行为问题](https://docs.google.com/document/d/112HBiMNvu6TYbDUOfVRe_MS4A-fKaWYrpMlmnsiMNiA)

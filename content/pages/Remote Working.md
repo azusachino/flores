@@ -1,7 +1,7 @@
 ---
 title: Remote Working
-created: 2022-09-28 23:50:06
-modified: 2022-12-05 14:05:27
+created: 2022-09-29 07:50:06
+modified: 2023-06-27 14:48:55
 aliases: [远程工作]
 tags: [Working, Lifestyle]
 ---

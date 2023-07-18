@@ -1,7 +1,7 @@
 ---
 title: Javascript
-created: 2022-11-17 03:14:53
-modified: 2022-12-05 14:05:27
+created: 2022-11-17 11:14:53
+modified: 2023-06-12 13:53:15
 aliases: [JS]
 tags: [CS, Web]
 ---
