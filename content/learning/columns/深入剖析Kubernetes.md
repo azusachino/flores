@@ -1,7 +1,7 @@
 ---
 title: 深入剖析Kubernetes
-created: 2023-01-09 16:00:00
-modified: 2023-07-17 14:22:42
+created: 2023-01-10 00:00:00
+modified: 2023-07-18 07:55:49
 tags: [Column, Tech, Kubernetes]
 author: 张磊
 read: 52

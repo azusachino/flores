@@ -4,71 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "67a41e11a23ef590",
+        "id": "528a1e6b82eab040",
         "type": "tabs",
         "children": [
           {
-            "id": "8aea03f1f02e5283",
+            "id": "b92ad5583064e46c",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/topics/Columns.md",
+                "file": "content/learning/columns/数据结构与算法之美.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "a207193288ed4fe9",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/reading/columns/数据结构与算法之美.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "8e038208d1437cab",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/reading/columns/设计模式之美.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "7d0f6e1465dd3c6c",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/reading/columns/Java性能调优实战.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": true
-              },
-              "pinned": true
+              }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +71,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 293.5,
+    "collapsed": true
   },
   "right": {
     "id": "b9c5f39a1a3c938e",
@@ -135,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/reading/columns/Java性能调优实战.md",
+                "file": "content/learning/columns/数据结构与算法之美.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/reading/columns/Java性能调优实战.md",
+                "file": "content/learning/columns/数据结构与算法之美.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/reading/columns/Java性能调优实战.md"
+                "file": "content/learning/columns/数据结构与算法之美.md"
               }
             }
           },
@@ -207,48 +160,48 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7d0f6e1465dd3c6c",
+  "active": "b92ad5583064e46c",
   "lastOpenFiles": [
-    "content/learning/courses/张汉东的Rust实战课.md",
-    "content/learning/courses/Netty源码剖析与实战.md",
-    "content/learning/Courses.md",
-    "content/reading/columns/Java性能调优实战.md",
-    "content/reading/columns/数据结构与算法之美.md",
+    "content/collections/tricks/trick2023.md",
+    "content/collections/tricks/trick2022.md",
+    "content/learning/columns/每个人都应该学会正确管理文件.md",
+    "content/learning/columns/数据结构与算法之美.md",
+    "content/learning/columns/Rust编程第一课.md",
+    "content/learning/papers/Raft Paper.md",
+    "content/learning/papers/Chubby Paper.md",
+    "content/topics/Courses.md",
     "content/topics/Columns.md",
-    "content/reading/columns/设计模式之美.md",
+    "content/learning/courses/AI for beginners.md",
+    "README.md",
+    "content/learning/courses/Netty源码剖析与实战.md",
+    "content/learning/courses/张汉东的Rust实战课.md",
     "content/learning/courses",
     "content/learning",
-    "content/reading/columns/深入剖析Kubernetes.md",
-    "content/reading/columns/Rust编程第一课.md",
     "content/images/redis-problems.png",
     "content/images/redis-two-aspects.png",
+    "content/learning/columns/设计模式之美.md",
     "content/images/java-lock-acquire.png",
-    "content/reading/columns/深入浅出区块链.md",
+    "content/learning/columns/深入浅出区块链.md",
     "content/collections/financial/投资建议.md",
     "content/images/linux-tcp-options.png",
     "content/images/java-jvm-framework.png",
-    "content/reading/columns/现代C++实战30讲.md",
+    "content/learning/columns/现代C++实战30讲.md",
     "content/images/java-thread-lock-upgradation.png",
-    "content/reading/columns/Redis核心技术实战.md",
+    "content/learning/columns/Redis核心技术实战.md",
     "content/images/java-thread-status-switch.png",
-    "content/reading/columns/从0开始学架构.md",
-    "content/reading/columns/深入拆解Java虚拟机.md",
+    "content/learning/columns/从0开始学架构.md",
+    "content/learning/columns/深入拆解Java虚拟机.md",
     "content/collections/financial",
+    "content/learning/columns/Java性能调优实战.md",
     "content/images/kubernetes-periodic-table.png",
     "content/images/rust-pin-self-referential-structure.png",
     "content/images/rust-async-await.png",
     "content/pages/Netty.md",
     "content/pages/Rust.md",
     "content/collections/instructions/Instruction 2022.md",
-    "content/reading/lessons/AI for beginners.md",
-    "content/reading/columns/Go语言第一课.md",
-    "content/reading/papers/Chubby Paper.md",
+    "content/learning/columns/Go语言第一课.md",
     "content/reading/lessons",
     "content/pages/Deliberate Practice.md",
-    "content/pages/Remote Working.md",
-    "content/reading/books/Java Performance The Definitive Guide.md",
-    "content/pages/Cloud Native.md",
-    "content/reading/columns/MySQL实战.md",
     ",markdownlint.json",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.content",
     "resources/_gen/assets/scss/styles/_dark_syntax.scss_f89a788ca0c3892c8201766ffc58739a.json",

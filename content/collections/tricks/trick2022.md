@@ -1,7 +1,7 @@
 ---
-title: trick 2022
-created: 2022-09-19 08:00:00
-modified: 2023-03-27 10:22:15
+title: Trick 2022
+created: 2022-09-19 16:00:00
+modified: 2023-07-18 11:42:30
 tags: [Collection, Trick]
 ---
 

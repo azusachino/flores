@@ -1,7 +1,7 @@
 ---
 title: Kubernetes入门实战课
-created: 2023-01-09 00:00:00
-modified: 2023-07-07 13:49:06
+created: 2023-01-09 08:00:00
+modified: 2023-07-18 13:31:24
 tags: [Column, Tech, Kubernetes]
 author: 罗剑锋
 read: 28
